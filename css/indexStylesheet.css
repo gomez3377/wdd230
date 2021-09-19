@@ -1,0 +1,36 @@
+html {
+  margin: 10px;
+  font-family: sans-serif;
+}
+header,
+footer {
+  background-color: #306b34;
+  color: white;
+  padding: 1.25rem;
+  border-radius: 12px;
+  max-width: 100%;
+}
+img {
+  width: 20%;
+  float: right;
+  position: relative;
+  left: -.75rem;
+  top: -5rem;
+}
+h1 {
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-align: center;
+}
+.footerText {
+  text-align: center;
+  font-size: 0.75rem;
+}
+a#footerLink:link {
+  color: white;
+}
+
+#lastUpdatedText {
+  color: #a6ff01;
+}
+
