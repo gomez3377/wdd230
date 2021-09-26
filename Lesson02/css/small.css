@@ -1,3 +1,18 @@
 img {
-    width:230px
+    width: 100px;
+    float: right;
+    padding-right: 30px;
+}
+img:nth-child(odd) {
+    float: left;
+}
+h1 h2 h3 {
+    font-family:'Spartan', sans-serif;
+}
+section{
+    margin: auto;
+    padding: 0 0 0 70px;
+}
+p {
+    font-family: 'Bitter', serif;
 }
