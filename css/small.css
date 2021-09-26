@@ -3,24 +3,30 @@ html {
   font-family: sans-serif;
 }
 header,
+main,
 footer {
+  margin: 0 auto;
+  padding: 0.75rem;
+  max-width: 45rem;
+}
+header {
+  margin-top: 10px;
+}
+header,
+footer {
+  text-align: center;
   background-color: #306b34;
   color: white;
-  padding: 1.25rem;
-  border-radius: 12px;
-  max-width: 100%;
 }
-img {
-  width: 20%;
+header img {
+  width: 200px;
   float: right;
-  position: relative;
-  left: -.75rem;
-  top: -5rem;
+  box-shadow: 0 0 30px gray;
+  height: auto;
 }
 h1 {
   letter-spacing: 2px;
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.5rem;
 }
 .footerText {
   text-align: center;
@@ -33,4 +39,3 @@ a#footerLink:link {
 #lastUpdatedText {
   color: #a6ff01;
 }
-
