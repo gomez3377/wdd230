@@ -1,4 +1,6 @@
-
+table {
+    border: black;
+}
 #primary {
     color: #55a630;
     font-size: 64px;
@@ -20,15 +22,17 @@
 
 
 #sample2 {
-background-color: #55a630;
+background-color: #bc4452;
 color: white;
     font-size: 30px;
 }
 
 
 
-#sample1 {
-
+#sample3 {
+background-color: #1a3820;
+color: white;
+font-size: 20px;
 }
 
 
@@ -38,7 +42,8 @@ color: white;
 }
 
 
-#sample1 {
-
+#sample7 {
+    color:#182f0e;
+        font-size: 16px;
 }
 
