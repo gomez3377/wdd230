@@ -1,5 +1,6 @@
 body {
   font-size: 16px;
+  margin: auto;
 }
 /* Navigation Bar */
 header,
@@ -29,6 +30,7 @@ nav ul li a {
   pad: 0.75rem;
   text-decoration: none;
   font-size: 1.5rem;
+  font-family: "Poiret One", cursive;
 }
 nav a:hover {
   color: #4cc9f0;
@@ -37,12 +39,72 @@ nav a:hover {
   color: #4cc9f0;
   font-weight: bold;
 }
+/* Main Body of the Page */
+h1 {
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  font-family: "Poiret One", cursive;
+}
 
-table {
+p {
+  font-family: "Loto", sans-serif;
+}
+#targetAudienceSection {
+  background-color: #031e26;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+#targetAudienceSection article {
+  font-size: 0.75rem;
+  line-height: 20px;
+}
+#personaSection {
+  margin: 1rem;
+}
+#personaSection h2,
+#personaSection h3,
+#scenarioSection h2,
+#scenarioSection h3,
+#siteNameSection h2,
+#purposeSection h2,
+#siteLogoSection h2,
+#siteDomainSection h2 {
+  text-align: center;
+  letter-spacing: 5px;
+}
+#personaSection h2,
+#scenarioSection h2 {
+  background-color: #4cc9f0;
+  padding: 2.5rem;
+}
+#personaSection article,
+#scenarioSection article,
+#siteNameSection p,
+#purposeSection p,
+#siteLogoSection img,
+#siteDomainSection p {
+  margin: 5rem 2rem 5rem 2rem;
+}
+#personaSection article p,
+#scenarioSection article p
+{
+  font-size: 0.7rem;
+  line-height: 30px;
+}
+/* Table */
+#typographyTable,
+#colorSchemeTable {
   margin: auto;
+  width: 50%;
 }
 td {
   border: 2px solid black;
+  padding: 0.5rem;
 }
 #primary {
   color: #55a630;
@@ -55,45 +117,67 @@ td {
   font-size: 24px;
 }
 
-#sample1 {
+#samplecolor1,
+#sampleText1 {
   background-color: #55a630;
+}
+
+#samplecolor2,
+#sampleText2 {
+  background-color: #bc4452;
+}
+
+#samplecolor3,
+#sampleText3 {
+  background-color: #1a3820;
+}
+#samplecolor4 {
+  background-color: #294f17;
+}
+#samplecolor5 {
+  background-color: #182f0e;
+}
+#sampleText1 {
   color: white;
   font-size: 40px;
+  font-family: "Poiret One", cursive;
 }
 
-#sample2 {
-  background-color: #bc4452;
+#sampleText2 {
   color: white;
   font-size: 30px;
+  font-family: "Poiret One", cursive;
 }
 
-#sample3 {
-  background-color: #1a3820;
+#sampleText3 {
   color: white;
   font-size: 20px;
+  font-family: "Poiret One", cursive;
 }
 
-#sample4,
-#sample5,
-#sample6 {
+#sampleText4,
+#sampleText5,
+#sampleText6 {
   color: #294f17;
+  font-family: "Poiret One", cursive;
 }
 
-#sample4 {
+#sampleText4 {
   font-size: 30px;
 }
 
-#sample5 {
+#sampleText5 {
   font-size: 25px;
 }
 
-#sample6 {
+#sampleText6 {
   font-size: 20px;
 }
 
-#sample7 {
+#sampleText7 {
   color: #182f0e;
   font-size: 16px;
+  font-family: "Loto", sans-serif;
 }
 /* Tablet View */
 @media only screen and (min-width: 37.5em) {
@@ -105,6 +189,12 @@ td {
   }
   nav ul li {
     flex: 1 1 100%;
+  }
+  #targetAudienceSection {
+    font-size: 0.75rem;
+  }
+  #targetAudienceSection article p {
+    font-size: 0.8em;
   }
 }
 /* Desktop View */
