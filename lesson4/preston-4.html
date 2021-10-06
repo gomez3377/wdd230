@@ -19,14 +19,15 @@
         <img src="images/beatifulWeatherlogo.png" alt="beatifulWeatherLogo">
         <h1>The Beautiful Outdoors</h1>
     </header>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Preston</li>
-        <li>Soda Springs</li>
-        <li>Fish Haven</li>
-        <li>Storm Center</li>
-        <li>Gallery</li>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="preston-4.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
     <main>
@@ -52,4 +53,5 @@
 
 </body>
 <script src="js/currentDate.js"></script>
+<script src="js/toggleMenu.js"></script>
 </html>
