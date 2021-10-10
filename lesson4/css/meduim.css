@@ -1,6 +1,10 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
-    
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
     nav button {
         display: none;
       }
@@ -18,5 +22,11 @@
           padding: 0.8rem 1rem;
           font-size: 0.9rem;
       }
-    
+    header  {
+        display: flex;
+        justify-content: center;
+    }
+    header img {
+        justify-content: end;
+    }
 } /*end medium */
