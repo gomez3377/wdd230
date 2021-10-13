@@ -51,28 +51,36 @@ nav ul.hide {
     display: none;
 }
 
-h2 {
+h2, h3 {
     font-family: "Poiret One", cursive;
     text-align: center;
     color: #294f17;
 
 }
-div {
+
+
+div img, article img {
+    width: 100%;
+}
+
+section, article {
     font-family: "Loto", sans-serif;
     padding: 1.5rem;
     border: 1px dotted #1a3820;
 }
 footer {
     background-color: #1a3820;
-    text-align: center;
     padding: 1rem;
 
 }
-footer span, footer div {
+footer div, footer section {
     font-family: "Poiret One", cursive;
     color: #fff;
     font-size: 1.2rem;
     padding: .8rem;
+}
+footer div {
+    text-align: center;
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
