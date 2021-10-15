@@ -57,7 +57,13 @@ h2, h3 {
     color: #294f17;
 
 }
-
+section#fiveDayForecastSection {
+    background-color: #294f17;
+}
+section#fiveDayForecastSection h3 {
+    color: #fff;
+    
+}
 
 div img, article img {
     width: 100%;
