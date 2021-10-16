@@ -1,29 +1,40 @@
 header {
+    height: 10rem;
     padding: 1rem;
-    display: flexbox;
+    
+
 }
-header div.banner {
-    padding: .5rem;
-    justify-content: center;
+header div#banner {
+    padding: 0.75rem;
     background: #1a3820;
     font-family: "Poiret One", curisve;
-    float: inline-start;
     color: #fff;
     letter-spacing: .25rem;
     font-size: 0.85rem;   
     
-
+    text-align: center;
+    display: none;
 }
+.logoAndTitleContainer {
+    display:flex;
+    justify-content: space-evenly;
+}
+
 header img {
-    float: left;
-    padding: 0.3rem
+    flex: 1;
+    padding: 1.25rem
 
 }
 header h1 {
     color: #55a630;
     font-family: "Poiret One", cursive;
     padding: 0.2rem;
-    float: right;
+}
+#motto {
+    font-size: .75rem;
+    text-align: center;
+    font-family: 'Loto', sans-serif;
+    color: #1a3820;
 }
 nav button{
     margin: .2rem 2%;
@@ -63,6 +74,8 @@ nav ul.hide {
     display: none;
 }
 
+
+
 h2, h3 {
     font-family: "Poiret One", cursive;
     text-align: center;
@@ -77,7 +90,7 @@ section#fiveDayForecastSection h3 {
     
 }
 
-div img, article img, footer img {
+article img, footer img {
     width: 100%;
 }
 

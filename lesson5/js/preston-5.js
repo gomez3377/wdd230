@@ -46,6 +46,6 @@ function toggleMenu() {
     }
 
     
-if (currentDay === "Thursday") {
-  
+if (currentWeekday === "Friday") {
+document.getElementById("banner").style.display = "block";
 } 

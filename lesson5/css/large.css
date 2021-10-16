@@ -6,6 +6,11 @@ nav ul li {
 }
     nav ul li a {
     padding: 0.6rem 1rem;
+    font-size: 2rem;
 
+
+}
+main, footer {
+    max-width: 75%;
 }
 } /*end large */
