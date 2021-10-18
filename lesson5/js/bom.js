@@ -24,6 +24,7 @@ else {
     
     listScriptureButton.addEventListener('click', e => {
         list.removeChild(listScripture)
+        input.focus();
     } )
 
 
