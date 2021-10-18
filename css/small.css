@@ -25,17 +25,18 @@ footer {
   -webkit-backdrop-filter: blur(30px);
 }
   header img {
-    display: flex;
-    justify-content: flex-end;
+    float: right;
     width: 200px;
     box-shadow: 0 0 30px gray;
     
 }
 main {
-  padding: 2rem;
+  position: relative;
+  padding: 2rem 0.75rem;
   background: rgba(255,255,255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  z-index: -1;
 }
   h1 {
   letter-spacing: 2px;
