@@ -1,6 +1,8 @@
-html {
-  margin: 10px;
-  font-family: sans-serif;
+
+body {
+  background: #d3daf5;
+  background: linear-gradient(90deg, #d3daf5 0, #C5f2ed 58%);
+font-family: sans-serif;
 }
 header,
 main,
@@ -8,23 +10,34 @@ footer {
   margin: 0 auto;
   padding: 0.75rem;
   max-width: 45rem;
+  
 }
 header {
   margin-top: 10px;
+
 }
 header,
 footer {
   text-align: center;
-  background-color: #306b34;
+  background: rgba(52,84,209, 0.6);
   color: white;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
-header img {
-  width: 200px;
-  float: right;
-  box-shadow: 0 0 30px gray;
-  height: auto;
+  header img {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+    box-shadow: 0 0 30px gray;
+    
 }
-h1 {
+main {
+  padding: 2rem;
+  background: rgba(255,255,255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+  h1 {
   letter-spacing: 2px;
   font-size: 1.5rem;
 }
