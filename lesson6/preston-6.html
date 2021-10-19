@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Preston</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/meduim.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <header>
+      <div id="banner">
+        Preston Pankcakes in the Park! 9:00 a.m. Saturday at the city park
+        pavillion.
+      </div>
+      <div class="logoAndTitleContainer">
+        <img src="images/beatifulWeatherlogo.png" alt="beatifulWeatherLogo" />
+        <div class="titleAndMotto">
+          <h1>The Beautiful Outdoors</h1>
+          <div id="motto">Presenting Idaho's Beauty</div>
+        </div>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="preston-4.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Preston Idaho</h2>
+      <div id="weatherSummarySection">
+        <img id="heroImage" src="images/heroImage.jpg" alt="heroImage" />
+        <section id="weatherSummary">
+          <h3 id="weatherSummaryHeader">Weather summary</h3>
+          <div id="weatherDetails">
+            <p>Weather:Currently Sunny</p>
+            <p>High: 75 F</p>
+            <p>Humidity 30%</p>
+            <p>Wind Speed: 2mph</p>
+          </div>
+        </section>
+      </div>
+      <section id="fiveDayForecastSection">
+        <h3>5 Day Forecast</h3>
+        <div class="fiveDayForecastIcons">
+          <img src="images/partlyCloudy.png" alt="day1" class="forcastIcons">
+          <img src="images/sunny.png" alt="day2" class="forcastIcons">
+          <img src="images/rainy.png" alt="day3" class="forcastIcons">
+          <img src="images/rainy.png" alt="day4" class="forcastIcons">
+          <img src="images/sunny.png" alt="day5" class="forcastIcons">
+        </div>
+      </section>
+      <article id="mainArticle">
+        <h3>Pumpkin Harvest</h3>
+        <img
+          id="articleImg"
+          src="images/pumpkinArticleImg.jpg"
+          alt="articleImg"
+        />
+        <p class="articleContent">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          reprehenderit consequatur quisquam voluptates rerum dolores possimus
+          corrupti, dolorum, veniam molestias inventore. Necessitatibus
+          obcaecati libero perferendis dicta voluptatem soluta tempora amet?
+        </p>
+        <br/>
+        <p class="articleContent">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          itaque praesentium hic voluptates voluptas delectus provident atque
+          vitae exercitationem nihil laudantium voluptatum vel, cum,
+          necessitatibus consequuntur, veniam maiores illo aliquid.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <div id="mapAndContactInfoContainer">
+
+        <section class="placeholder">
+          <h3 id="contactInfoHeader">Contact Information</h3>
+          <p>&#9993; gom12011@byui.edu</p>
+          <p>&#9742; 111-222-1234</p>
+        <div id="socialMediaContainer">
+          <img class="socialMediaLink" src="images/facebook.png" alt="facebook">
+          <img class="socialMediaLink" src="images/twitter.png" alt="twitter">
+          <img class="socialMediaLink" src="images/instagram.png" alt="instagram">
+        </div>
+        </section>
+        <img id="locationMap" src="images/prestonMap.jpg" alt="footerMap" />
+      </div>
+        <div id=footerBar>
+          <span>
+            &#169; The Beautiful Outdoors | Attributions | Jonathon Gomez</span
+            ><br />
+            <span id="currentDate"></span>
+          </div>
+    </footer>
+    <script src="js/preston-5.js"></script>
+  </body>
+</html>
