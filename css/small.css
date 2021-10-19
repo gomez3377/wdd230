@@ -2,7 +2,7 @@
 body {
   background: #d3daf5;
   background: linear-gradient(90deg, #d3daf5 0, #C5f2ed 58%);
-font-family: sans-serif;
+font-family: "Josefin Sans", sans-serif;
 }
 header,
 main,
@@ -36,7 +36,6 @@ main {
   background: rgba(255,255,255, 0.7);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  z-index: -1;
 }
   h1 {
   letter-spacing: 2px;

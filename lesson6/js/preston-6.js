@@ -49,3 +49,13 @@ function toggleMenu() {
 if (currentWeekday === "Friday") {
 document.getElementById("banner").style.display = "block";
 } 
+// Webfront Load 
+
+WebFont.load ({
+    google: {
+        families: [
+            'Poiret One',
+            'Lato'
+        ]
+    }
+});
