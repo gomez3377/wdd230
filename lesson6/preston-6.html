@@ -45,7 +45,12 @@
     <main>
       <h2>Preston Idaho</h2>
       <div id="weatherSummarySection">
-        <img id="heroImage" src="images/heroImage.jpg" alt="heroImage" />
+        <picture id="heroImage">
+          <source media="(max-width: 545px)" srcset="images/franklin200.jpg">
+          <source media="(max-width: 1007px)" srcset="images/franklin500.jpg">
+          <source media="(max-width: 2250px)" srcset="images/franklin800.jpg">
+          <img  src="images/franklinOriginal.jpg" alt="heroImage" />
+        </picture>
         <section id="weatherSummary">
           <h3 id="weatherSummaryHeader">Weather summary</h3>
           <div id="weatherDetails">

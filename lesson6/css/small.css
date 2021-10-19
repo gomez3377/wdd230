@@ -94,9 +94,10 @@ main {
     position: relative;
 }
 
-#heroImage {
-    width: 100%;
-    border-style: none;
+#heroImage img {
+    display: block;
+    width: 96%;
+    margin: 0 2%;
 }
 
 /* The Main Section  */
