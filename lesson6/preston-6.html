@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
   </head>
   <body>
-    <header>
+    <header class="clearfix">
       <div id="banner">
         Preston Pankcakes in the Park! 9:00 a.m. Saturday at the city park
         pavillion.
@@ -48,7 +48,7 @@
         <picture id="heroImage">
           <source media="(max-width: 545px)" srcset="images/franklin200.jpg">
           <source media="(max-width: 1007px)" srcset="images/franklin500.jpg">
-          <source media="(max-width: 2250px)" srcset="images/franklin800.jpg">
+          <source media="(max-width: 2500px)" srcset="images/franklin800.jpg">
           <img  src="images/franklinOriginal.jpg" alt="heroImage" />
         </picture>
         <section id="weatherSummary">
@@ -73,11 +73,16 @@
       </section>
       <article id="mainArticle">
         <h3>Pumpkin Harvest</h3>
-        <img
+        <picture>
+          <source media="(max-width: 545px)" srcset="images/pumpkinArticleImg500.jpg">
+          <source media="(max-width: 1007px)" srcset="images/pumpkinArticleImg800.jpg">
+          <source media="(max-width: 2500px)" srcset="images/pumpkinArticleImg500.jpg">
+          <img
           id="articleImg"
           src="images/pumpkinArticleImg.jpg"
           alt="articleImg"
-        />
+          />
+        </picture>
         <p class="articleContent">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
           reprehenderit consequatur quisquam voluptates rerum dolores possimus
@@ -106,7 +111,12 @@
           <img class="socialMediaLink" src="images/instagram.png" alt="instagram">
         </div>
         </section>
-        <img id="locationMap" src="images/prestonMap.jpg" alt="footerMap" />
+        <picture>
+          <source media="(max-width:545px )" srcset="images/prestonMap500.jpg">
+          <source media="(max-width:1007px )" srcset="images/prestonMap800.jpg">
+          <source media="(max-width:2500px )" srcset="images/prestonMap.jpg">
+          <img id="locationMap" src="images/prestonMap.jpg" alt="footerMap" />
+        </picture>
       </div>
         <div id=footerBar>
           <span>
