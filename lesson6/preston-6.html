@@ -54,10 +54,11 @@
         <section id="weatherSummary">
           <h3 id="weatherSummaryHeader">Weather summary</h3>
           <div id="weatherDetails">
-            <p>Weather:Currently Sunny</p>
-            <p>High: 75 F</p>
-            <p>Humidity 30%</p>
-            <p>Wind Speed: 2mph</p>
+            <p>Currently: Rainy</p>
+            <p>High: <span id="currentTemperature">50</span>  &#176;F</p>
+            <p>Wind Chill: <span id="windChill"></span> &#176;F</p>
+            <p>Humidity 95%</p>
+            <p>Wind Speed: <span id="windSpeed">12</span> mph</p>
           </div>
         </section>
       </div>
@@ -126,5 +127,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/preston-6.js"></script>
+    <script src="js/windChill.js"></script>
   </body>
 </html>

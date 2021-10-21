@@ -94,6 +94,12 @@ main {
   width: 96%;
   margin: 0 2%;
 }
+div#weatherDetails {
+  font-family: 'Poiret One', sans-serif;
+  padding: 1rem;
+  background: #1a3820;
+  color: #fff;
+}
 
 /* The Main Section  */
 h2,

@@ -48,8 +48,7 @@
     color: white;
   }
   div#weatherDetails {
-      font-family: "Poiret One", sans-serif;
-    color: #fff;
+    background: none;
   }
   .fiveDayForecastIcons {
     display: flex;
