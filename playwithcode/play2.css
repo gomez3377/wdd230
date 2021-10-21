@@ -1,0 +1,44 @@
+div {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.box1 {
+  background: #2191fb;
+  transition-property: ;
+  transition-duration: 750ms;
+  transition-timing-function: ease-out;
+}
+
+.box2 {
+  background: #ba274a;
+  transition-property: background, border-radius, width, height;
+  transition-duration: 750ms;
+  transition-timing-function: ease-out;
+}
+
+.box3 {
+  background: #841c26;
+  transition-property: background, border-radius, width, height;
+  transition-duration: 750ms;
+  transition-timing-function: ease-out;
+}
+
+.box4 {
+  background: #8cdedc;
+  transition-property: background, border-radius, width, height;
+  transition-duration: 750ms;
+  transition-timing-function: ease-out;
+}
+.box1:hover {
+  float: left;
+}
+.box2:hover {
+  float: left;
+}
+.box3:hover {
+  float: left;
+}
+.box4:hover {
+  float: left;
+}
