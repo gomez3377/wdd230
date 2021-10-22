@@ -4,16 +4,14 @@ body {
   background: linear-gradient(90deg, #d3daf5 0, #C5f2ed 58%);
 font-family: "Josefin Sans", sans-serif;
 }
-header,
-main,
-footer {
-  margin: 0 auto;
-  padding: 0.75rem;
-  max-width: 45rem;
-  
-}
-header {
-  margin-top: 10px;
+.containerBox {
+  position: relative;
+  background: rgba(255,255,255,0.5);
+  margin: 5rem auto;
+  max-width: 70rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(52,84,209,0.5);
+  backdrop-filter: blur(30px);
 
 }
 header,
@@ -21,25 +19,34 @@ footer {
   text-align: center;
   background: rgba(52,84,209, 0.6);
   color: white;
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
+  padding: 0.1rem;
 }
-  header img {
-    float: right;
-    width: 200px;
+div#profilePicBox{
+  position: absolute;
+    top: 2rem;
+    right: 1.25rem;
+    width: 15rem;
+    height: 100%;
+  }
+  img {
+    width: 100%;
     box-shadow: 0 0 30px gray;
-    
+
 }
 main {
-  position: relative;
-  padding: 2rem 0.75rem;
-  background: rgba(255,255,255, 0.7);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  width: 100%;
+  padding: 2rem 0;
 }
   h1 {
   letter-spacing: 2px;
   font-size: 1.5rem;
+}
+
+h2 {
+  padding: 0 2rem;
+}
+ul {
+  padding: 0 3rem;
 }
 .footerText {
   text-align: center;
