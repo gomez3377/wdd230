@@ -4,7 +4,7 @@ const currentTemperature = parseFloat(
 
 const windSpeed = parseFloat(document.querySelector("#windSpeed").textContent);
 if (currentTemperature <= 50 && windSpeed > 3.0) {
-  const windChill = windChillFunc(currentTemperature, windSpeed);
+  let windChill = windChillFunc(currentTemperature, windSpeed);
 } else {
   windChill = "N/A";
 }
@@ -19,4 +19,6 @@ function windChillFunc(t, s) {
   return f;
 }
 
-document.querySelector("#windChill").textContent = windChill;
+document.getElementById("windChill").innerHTML = windChill;
+console.log(windChill);
+
