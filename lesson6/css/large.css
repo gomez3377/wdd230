@@ -33,26 +33,7 @@
     max-width: 75%;
   }
 
-  #weatherSummary {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    background: rgba(25, 56, 22, 0.2);
-    border-radius: 10px;
-    z-index: 2;
-    border: none;
-    backdrop-filter: blur(2.5px);
-    padding: 2%;
-  }
-  #weatherSummaryHeader {
-    color: white;
-    margin-bottom: 0.5rem;
-  }
-  div#weatherDetails {
-    background: none;
-    padding-top: 0.25rem;
-  }
-
+  
   p.articleContent {
     line-height: 2rem;
   }
