@@ -1,14 +1,3 @@
-const currentTemperature = parseFloat(
-  document.querySelector("#currentTemperature").textContent
-);
-
-const windSpeed = parseFloat(document.querySelector("#windSpeed").textContent);
-if (currentTemperature <= 50 && windSpeed > 3.0) {
-  let windChill = windChillFunc(currentTemperature, windSpeed);
-} else {
-  windChill = "N/A";
-}
-
 function windChillFunc(t, s) {
   let f =
     35.74 +
@@ -19,6 +8,17 @@ function windChillFunc(t, s) {
   return f;
 }
 
+const currentTemperature = parseFloat(
+  document.querySelector("#currentTemperature").innerHTML
+);
+let windChill =""
+const windSpeed = parseFloat(document.querySelector("#windSpeed").innerHTML);
+if (currentTemperature <= 50 && windSpeed > 3.0) {
+  windChill = windChillFunc(currentTemperature, windSpeed);
+} else {
+  windChill = "N/A";
+}
+
+
 document.getElementById("windChill").innerHTML = windChill;
-console.log(windChill);
 

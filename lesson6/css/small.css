@@ -22,15 +22,16 @@ header div#banner {
 }
 
 header img {
+  margin: 0.5rem;
   padding: 0.2rem;
-  padding-top: 1.05rem;
 }
 header h1 {
   color: #55a630;
   font-family: "Poiret One", cursive;
   padding: 0.2rem;
   margin-bottom: 0;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  letter-spacing: 0.25rem;
 }
 #motto {
   padding: 0.2rem;
@@ -96,9 +97,10 @@ main {
 }
 div#weatherDetails {
   font-family: 'Poiret One', sans-serif;
-  padding: 1rem;
+  padding: 0.75rem;
   background: #1a3820;
   color: #fff;
+  letter-spacing: 0.25rem;
 }
 
 /* The Main Section  */
@@ -107,12 +109,16 @@ h3 {
   font-family: "Poiret One", cursive;
   text-align: center;
   color: #294f17;
+  letter-spacing: 0.25rem;
 }
 #weatherSummary {
   margin: 0 2%;
 }
 h2 {
     font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.5rem;
 }
 .fiveDayForecastIcons {
   display: none;
@@ -144,6 +150,7 @@ footer section {
   color: #fff;
   font-size: 1.2rem;
   padding: 0.8rem;
+  letter-spacing: 0.25rem;
 }
 #locationMap {
   width: 100%;
