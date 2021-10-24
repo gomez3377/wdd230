@@ -18,9 +18,12 @@
     <div class="containerBox">
       <header>
         <h1>Jonathon R. Gomez</h1>
-        <div id="profilePicBox">
-        <img src="images/jonGomezHomePagePicture.jpg" alt="profilePic">
-        </div>
+        <picture id="profilePicBox">
+          <source media="(max-width:200vw )" srcset="images/HomepagePic200.jpg">
+          <source media="(max-width:500vw )" srcset="images/HomepagePic500.jpg">
+          <source media="(max-width:800vw )" srcset="images/HomepagePic800.jpg">
+          <img src="images/HomepagePic800.jpg" alt="profilePic">
+        </picture>
       </header>
       <main>
         <h2>WDD 230: Assignment Portal</h2>
