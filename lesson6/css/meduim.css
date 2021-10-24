@@ -1,42 +1,48 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
-    nav {
-        display: flex;
-        justify-content: center;
-    }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
 
-    nav button {
-        display: none;
-      }
-      nav ul.hide {
-          display: block;
-      }
-      nav ul {
-          margin-left: 2%;
-      }
-      nav ul li {
-        float: left;
-      }
-      nav ul li a {
-          border: none;
-          padding: 0.8rem 1rem;
-          font-size: 0.9rem;
-      }
-    header  {
-        display: flex;
-        justify-content: center;
-    }
-    header img {
-        justify-content: end;
-    }
-    .fiveDayForecastIcons {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    img#articleImg {
-        float: right;
-        right: 5rem;
-        width: 25%;
-        padding: 0 1rem;
-      }
+  nav button {
+    display: none;
+  }
+  nav ul.hide {
+    display: block;
+  }
+  nav ul {
+    margin-left: 2%;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  header img {
+    justify-content: end;
+  }
+  .fiveDayForecastIcons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  img.forcastIcons {
+    width: 10%;
+  }
+  img#articleImg {
+    float: right;
+    right: 5rem;
+    width: 25%;
+    padding: 0 1rem;
+  }
+  img.socialMediaLink {
+    width: 5%;
+  }
 } /*end medium */

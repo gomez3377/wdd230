@@ -52,20 +52,17 @@
     background: none;
     padding-top: 0.25rem;
   }
- 
-  img.forcastIcons {
-    width: 10%;
-}
+
   p.articleContent {
     line-height: 2rem;
   }
-  
+
   /* The Footer  */
   div#mapAndContactInfoContainer {
     display: flex;
     flex-direction: row-reverse;
   }
- 
+
   h3#contactInfoHeader {
     text-align: left;
   }
@@ -74,7 +71,4 @@
     width: 75%;
     text-align: left;
   }
-  img.socialMediaLink {
-    width: 5%;
-}
 } /*end large */
