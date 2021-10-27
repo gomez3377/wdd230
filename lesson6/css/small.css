@@ -36,7 +36,7 @@ header h1 {
 #motto {
   padding: 0.2rem;
   font-size: 0.65rem;
-  text-align: center;
+  /* text-align: center; */
   font-family: "Lato", sans-serif;
   color: #1a3820;
 }
@@ -131,13 +131,40 @@ section#fiveDayForecastSection h3 {
   color: #fff;
 }
 section#fiveDayForecastSection, article {
-    font-family: "Loto", sans-serif;
+    font-family: "Lato", sans-serif;
     padding: 1.5rem;
     margin: 10% 2%;
 }
 #articleImg {
   width: 100%;
 }
+
+/* CSS RULES FOR THE GALLERY PAGE */
+.galleryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+picture {
+  width: 85%;
+}
+img.galleryPics {
+  width: 100%;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+img.galleryPics:hover {
+  box-shadow: 0 0 50px #1a3820;
+}
+
+.picCaption {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.25rem;
+  color: #1a3820;
+  padding: 1rem;
+}
+
 
 /* The Footer */
 footer {

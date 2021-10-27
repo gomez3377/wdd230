@@ -37,7 +37,11 @@
   p.articleContent {
     line-height: 2rem;
   }
-
+ /* CSS RULES FOR THE GALLERY PAGE */
+ .galleryContainer {
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 100%;
+}
   /* The Footer  */
   div#mapAndContactInfoContainer {
     display: flex;
