@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="/lesson6/css/small.css" />
+    <link rel="stylesheet" href="/lesson6/css/meduim.css" />
+    <link rel="stylesheet" href="/lesson6/css/large.css" />
+    <link rel="stylesheet" href="/lesson6/css/normalize.css">
+  </head>
+  <body>
+    <header class="clearfix">
+      <div id="banner">
+        Preston Pankcakes in the Park! 9:00 a.m. Saturday at the city park
+        pavillion.
+      </div>
+      <div class="logoAndTitleContainer">
+        <img src="images/beatifulWeatherlogo.png" alt="beatifulWeatherLogo" />
+        <div class="titleAndMotto">
+          <h1>The Beautiful Outdoors</h1>
+          <div id="motto">Presenting Idaho's Beauty</div>
+        </div>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li class="active"><a href="preston-4.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+        <h2>Weather Gallery</h2>
+      <picture><img src="images/stormyField800.jpg" alt="" class="galleryPics" /></picture>
+      <picture><img src="images/sept2021.jpg" alt="" class="galleryPics" /></picture>
+      <picture><img src="images/sept2021.jpg" alt="" class="galleryPics" /></picture>
+      <picture><img src="" alt="" class="galleryPics" /></picture>
+      <picture><img src="" alt="" class="galleryPics" /></picture>
+      <picture><img src="" alt="" class="galleryPics" /></picture>
+      <picture><img src="" alt="" class="galleryPics" /></picture>
+      <picture><img src="" alt="" class="galleryPics" /></picture>
+      <picture><img src="" alt="" class="galleryPics" /></picture>
+    </main>
+    <footer>
+      <div id="mapAndContactInfoContainer">
+        <section class="placeholder">
+          <h3 id="contactInfoHeader">Contact Information</h3>
+          <p>&#9993; gom12011@byui.edu</p>
+          <p>&#9742; 111-222-1234</p>
+          <div id="socialMediaContainer">
+            <img
+              class="socialMediaLink"
+              src="images/facebook.png"
+              alt="facebook"
+            />
+            <img
+              class="socialMediaLink"
+              src="images/twitter.png"
+              alt="twitter"
+            />
+            <img
+              class="socialMediaLink"
+              src="images/instagram.png"
+              alt="instagram"
+            />
+          </div>
+        </section>
+        <!-- <picture>
+            <source media="(max-width:545px )" srcset="images/prestonMap500.jpg">
+            <source media="(max-width:1007px )" srcset="images/prestonMap800.jpg">
+            <source media="(max-width:2500px )" srcset="images/prestonMap.jpg">
+            <img id="locationMap" src="images/prestonMap.jpg" alt="footerMap" />
+          </picture> -->
+      </div>
+      <div id="footerBar">
+        <span>
+          &#169; The Beautiful Outdoors | Attributions | Jonathon Gomez</span
+        ><br />
+        <span id="currentDate"></span>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/gallery.js"></script>
+  </body>
+</html>
