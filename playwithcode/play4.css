@@ -1,0 +1,54 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.trasitiontiming {
+    width: 50vw;
+    height: 50vh;
+}
+
+
+.timingSpeedComparison {
+    width: 100vw;
+    height: 100vh;
+}
+
+.timingSpeedComparison div {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+}
+
+.timingSpeedComparison:hover div {
+    width: 600px;
+}
+
+
+.box1 {
+    background: #c33149;
+    color: #fff;
+    transition: width 1500ms linear;
+}
+.box2 {
+    background: #a8c256;
+    transition: width 1500ms ease-in;
+}
+.box3 {
+    background: #f7c548;
+    transition: width 1500ms ease-out;
+}
+.box4 {
+    background: #255957;
+    color: #fff;
+    transition: width 1500ms ease-in-out;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
