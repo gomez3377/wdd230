@@ -1,0 +1,59 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+  /* The Header Bar */
+  .logoAndTitleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .titleAndMotto {
+    font-size: 1.5rem;
+    width: 35rem;
+  }
+
+  #motto {
+    text-align: left;
+  }
+  /* The navigation bar */
+  nav ul li {
+    justify-content: center;
+  }
+  nav ul li a {
+    padding: 0.6rem 1rem;
+    font-size: 2rem;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  #motto {
+    font-size: 1rem;
+  }
+  /* The Main Section */
+  main {
+    max-width: 75%;
+  }
+
+  
+  p.articleContent {
+    line-height: 2rem;
+  }
+ /* CSS RULES FOR THE GALLERY PAGE */
+ .galleryContainer {
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 100%;
+}
+  /* The Footer  */
+  div#mapAndContactInfoContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  h3#contactInfoHeader {
+    text-align: left;
+  }
+
+  section.placeholder {
+    width: 75%;
+    text-align: left;
+  }
+} /*end large */

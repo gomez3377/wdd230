@@ -98,3 +98,7 @@ else {
     });
 }
 
+// Visits on this page 
+var getting = browser.history.getVisits(
+    
+)
