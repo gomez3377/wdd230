@@ -1,0 +1,49 @@
+table {
+  margin: 10px auto;
+  font-family: "Ubuntu", sans-serif;
+  border: thin solid lightgray;
+  border-collapse: collapse;
+  box-shadow: 0.5rem 0.5rem 1rem #628ca6;
+}
+thead,
+tfoot {
+  background-color: #7fb9c2;
+}
+thead th {
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+tbody {
+  border: thin solid lightgray;
+  border-collapse: collapse;
+
+  text-align: center;
+}
+tbody th {
+  background-color: #628ca6;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-collapse: collapse;
+  border: thin solid lightgray;
+}
+tbody tr {
+  background-color: #e7f0ed;
+
+}
+
+td {
+  padding: 0.5rem 1rem;
+  border: thin solid lightgray;
+  border-collapse: collapse;
+}
+tbody tr:nth-child(2n + 1) {
+  background-color: #e7ffed;
+}
+
+tfoot tr {
+    font-size: .75rem;
+    padding: 0.5rem 0.75rem;
+    text-align: center;
+    
+}
