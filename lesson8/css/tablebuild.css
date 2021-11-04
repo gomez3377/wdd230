@@ -40,6 +40,10 @@ td {
 tbody tr:nth-child(2n + 1) {
   background-color: #e7ffed;
 }
+#goalMet {
+	background: #628ca6;
+	color: #fff;
+}
 
 tfoot tr {
     font-size: .75rem;
