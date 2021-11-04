@@ -90,7 +90,7 @@ main {
   position: relative;
 }
 
-#heroImage img {
+#heroImage img, #responseImage img {
   display: block;
   width: 96%;
   margin: 0 2%;
@@ -130,7 +130,7 @@ section#fiveDayForecastSection {
 section#fiveDayForecastSection h3 {
   color: #fff;
 }
-section#fiveDayForecastSection, article {
+section#fiveDayForecastSection, article, #fourmResponse {
     font-family: "Lato", sans-serif;
     padding: 1.5rem;
     margin: 10% 2%;
