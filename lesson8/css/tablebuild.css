@@ -40,7 +40,7 @@ td {
 tbody tr:nth-child(2n + 1) {
   background-color: #e7ffed;
 }
-#goalMet {
+td#goalMet {
 	background: #628ca6;
 	color: #fff;
 }
