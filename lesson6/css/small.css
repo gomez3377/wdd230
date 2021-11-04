@@ -165,6 +165,18 @@ img.galleryPics:hover {
   padding: 1rem;
 }
 
+/* CSS RULES FOR THE FOURM PAGE*/
+form {
+	margin: 10% 2%;
+}
+.forumTop {
+	display: block;
+	/* margin: 3% 2%; */
+	font-family: "Poiret One",cursive;
+	font-size: 1.5rem;
+	letter-spacing: 0.15rem;
+	padding: 1rem;
+}
 
 /* The Footer */
 footer {
