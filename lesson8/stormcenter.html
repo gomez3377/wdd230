@@ -41,21 +41,21 @@
           <fieldset>
             <label class="forumTop">First Name* <input type="text" name="fname" id="fname" required></label>
             <label class="forumTop">Email <input type="email" placeholder="someone@gmail.com"></label>
-            <label class="forumTop" >Phone Number* <input type="tel" name="phone" required></label>
+            <label class="forumTop" >Phone Number* <input type="tel" name="phone" placeholder="1234561234" required></label>
             <label class="forumTop" >Zip Code* <input type="number" required></label>
           </fieldset>
           <fieldset>
 
-            <label>Storm Date <input type="date" name="stormDate">
-            <label for="stormTypeChoice">Storm Type <input list="stormtype" name="stormType" id="stormTypeChoice"> <datalist id="stormType">
+            <label class="forumTop">Storm Date <input type="date" name="stormDate"></label>
+            <label class="forumTop" for="stormTypeChoice">Storm Type <input list="stormtype" name="stormType" id="stormTypeChoice"> <datalist id="stormType">
               <option value="Flash Flood"></option>
               <option value="Hail"></option>
               <option value="Hurricane"></option>
               <option value="Thunderstorm"></option>
               <option value="Tornado"></option>
             </datalist> </label>
-              <label for="">Storm Severity <input type="range" name="severity" id="severity" minlength="1" maxlength="10"> </label>
-              <label for="">Storm Region
+              <label class="forumTop" for="">Storm Severity <input type="range" name="severity" id="severity" minlength="1" maxlength="10"> </label>
+              <label class="forumTop" for="">Storm Region
                 <select name="stormRegion" id="">
                   <option value="" selected disabled>Select Region</option>
                   <option value="fishHaven">Fish Haven</option>
@@ -63,7 +63,7 @@
                   <option value="sodaSprings">Soda Springs</option>
                 </select>
               </label>
-              <label for="">User In Danger?
+              <label class="forumTop" for="">User In Danger?
                 <input type="radio" name="yes" value="yes">Yes
                 <input type="radio" name="no" value="no">No
                 <input type="radio" name="maybe" value="maybe">Maybe
@@ -71,11 +71,11 @@
             </fieldset>
             <fieldset>
 
-              <label for="">Additional Information or Comments
+              <label class="forumTop">Additional Information or Comments
                 <textarea name="" id="" cols="30" rows="10"></textarea>
               </label>
             </fieldset>
-            <input type="submit" value="Submit">
+            <input class="submitBtn" type="submit" value="Submit">
           </form>
       </main>
       <footer>
