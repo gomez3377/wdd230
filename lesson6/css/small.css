@@ -171,12 +171,16 @@ form {
 }
 fieldset {
   margin-bottom: 15%;
+  background: #1a3820;
+  border: none;
+  border-radius: 2rem;
 }
-.forumTop {
+.forumTop , .forumSbs {
 	display: block;
 	/* margin: 3% 2%; */
 	font-family: "Poiret One",cursive;
 	font-size: 1.5rem;
+  color: #fff;
 	letter-spacing: 0.15rem;
 	padding: 1rem;
 }
@@ -188,10 +192,15 @@ fieldset {
   max-width: 20rem;
   border-radius: 1.5rem;
   border: none;
-  background: rgba(0, 0,0,0.1);
+  background: rgba(255, 255,255,0.1);
   letter-spacing: 0.15rem;
   font-family: "Lato", sans-serif;
   font-size: 1.25rem;
+  color: #fff;
+}
+.forumSbs input {
+  margin: 3% 0;
+  padding: 0.75rem;
 }
 .forumTop input:required {
   background: rgba(239, 35, 60, 0.4); 
@@ -218,6 +227,7 @@ fieldset {
   background: #55a630;
 }
 select {
+  
 	font-family: "Poiret One",cursive;
 	display: block;
 	margin: 5% 0;
@@ -226,8 +236,8 @@ select {
 	border: none;
 	background: rgba(0,0,0,0.1);
 }
-textarea {
-	overflow: auto;
+#comments {
+	
   margin: 5% 0;
 }
 
