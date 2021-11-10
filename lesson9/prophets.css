@@ -1,0 +1,47 @@
+
+h1{
+    font-family: "Cinzel", serif;
+    text-align: center;
+    color: #000;
+    font-size: 2rem;
+}
+
+
+section {
+    background:#3C0919;
+    border-radius: 20px;
+    margin: 2.5rem 4rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h2 {
+    color: #fff;
+    font-family: "Cinzel", serif;
+    font-size: 2rem;
+}
+
+p {
+    font-family: "Volkorn" , serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    padding: 0 1rem;
+}
+
+img {
+    width: 50%;
+    padding: 2rem;
+}
+
+footer {
+    background: #3C0919;
+    font-family: "Volkorn", serif;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
