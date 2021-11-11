@@ -1,0 +1,16 @@
+h1, h2{
+    text-align: center;
+}
+
+section {
+    margin: 2rem 3rem;
+
+}
+.imgcontainer {
+    display: flex;
+    
+}
+
+img {
+    width: 45%;
+}
