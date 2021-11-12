@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="../lesson6/css/normalize.css" />
   </head>
   <body>
-    <header class="clearfix">
+    <header  class="clearfix" id="homePageHeader">
+      
       <picture id="homeHeroImg">
         <source media="(max-width: 200px )" srcset="img/homeHeroImg200.jpg" />
         <source media="(max-width: 500px )" srcset="img/homeHeroImg500.jpg" />
@@ -19,16 +20,17 @@
         <source media="(max-width: 1200px )" srcset="img/homeHeroImg1280.jpg" />
         <img src="img/homeHeroimg.jpg" alt="homeHeroImg" />
       </picture>
-      <div class="logoAndTitleContainer">
         <img
           src="../lesson6/images/beatifulWeatherlogo.png"
           alt="beatifulWeatherLogo"
+          class="logo"
         />
-        <div class="titleAndMotto">
-          <h1>The Beautiful Outdoors</h1>
-          <div id="motto">Presenting Idaho's Beauty</div>
+        <div class="homePageTitles">
+
+          <h1 id="homePageTitle1">Welcome To</h1>
+          <h1 id="homePageTitle2">The Beautiful Outdoors</h1>
         </div>
-      </div>
+
       <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
@@ -41,7 +43,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="clearfix">
       <article>
         <h2>Welcome</h2>
         <p>

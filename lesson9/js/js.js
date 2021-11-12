@@ -40,6 +40,7 @@ function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
     }
 
+// This section adds Town Data from a JSON file to the Home Page
 
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 fetch(requestURL)
@@ -54,6 +55,7 @@ fetch(requestURL)
         if (towns[i].name === "Soda Springs" || towns[i].name === "Fish Haven" || towns[i].name === "Preston") {
 
             let card = document.createElement('section');
+            card.className = 'townSection';
             let townName = document.createElement('h2');
             let motto = document.createElement('p');
             let yearFounded = document.createElement('p');
@@ -67,9 +69,9 @@ fetch(requestURL)
             
             townName.textContent = towns[i].name;
             motto.textContent = towns[i].motto
-            yearFounded.textContent = towns[i].yearFounded;
-            population.textContent = towns[i].currentPopulartion;
-            rainfall.textContent = towns[i].averageRainfall;
+            yearFounded.textContent = "Year Founded: " + towns[i].yearFounded;
+            population.textContent = "Population: " + towns[i].currentPopulation;
+            rainfall.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
             
             townImgSource1.media = '(max-width: 200px)';
             townImgSource2.media = '(max-width: 500px)';
@@ -113,6 +115,7 @@ fetch(requestURL)
 
 });
 
+//This section gets the google fonts I need from the webfont API
 WebFont.load({
     google: {
         families: [
