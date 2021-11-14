@@ -56,6 +56,9 @@ fetch(requestURL)
 
             let card = document.createElement('section');
             card.className = 'townSection';
+            let townInfo = document.createElement('div');
+            townInfo.className = "townInfoContainer";
+
             let townName = document.createElement('h2');
             let motto = document.createElement('p');
             let yearFounded = document.createElement('p');
@@ -77,17 +80,19 @@ fetch(requestURL)
             townImgSource2.media = '(max-width: 500px)';
             townImgSource3.media = '(max-width: 800px)';
             townImg.alt = 'townImg';
+            
+            card.appendChild(townInfo)
+            townInfo.appendChild(townName);
+            townInfo.appendChild(motto);
+            townInfo.appendChild(yearFounded);
+            townInfo.appendChild(population);
+            townInfo.appendChild(rainfall);
 
+            card.appendChild(townImgContainer);
             townImgContainer.appendChild(townImg);
             townImgContainer.appendChild(townImgSource1);
             townImgContainer.appendChild(townImgSource2);
             townImgContainer.appendChild(townImgSource3);
-            card.appendChild(townName);
-            card.appendChild(motto);
-            card.appendChild(yearFounded);
-            card.appendChild(population);
-            card.appendChild(rainfall);
-            card.appendChild(townImgContainer);
 
             if (towns[i].name === "Soda Springs") {
                 townImgSource1.srcset="img/sodaSpringsImg200.jpg";

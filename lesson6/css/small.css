@@ -144,35 +144,80 @@ section#fiveDayForecastSection, article, #fourmResponse {
   margin: 0;
   position: relative;
 }
-#homePageHeader img {
-	margin: 0;
-	padding: 0;
+#homeHeroImg {
+  width: 100%;
+}
+#homeHeroImg img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .logo {
-	position: absolute;
-	top: 0;
+  margin: 0;
+  width: 4rem;
+  position: absolute;
+}
+.buttonContainer {
+  position: absolute;
+  top: 7%;
+  right: 4%;
+  cursor: pointer;
+  height: 27px;
+  width: 35px;
+}
+
+
+.buttonContainer span {
+  background: #fff;
+  border: none;
+  border-radius: 15rem;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+}
+.buttonContainer .active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+
+}
+.buttonContainer .active .middle {
+  opacity: 0;
+}
+.buttonContainer .active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  
+}
+.buttonContainer span:nth-of-type(2){
+  top: 11px;
+}
+.buttonContainer span:nth-of-type(3){
+  top: 22px;
 }
 .homePageTitles {
 	display: flex;
 	flex-direction: column;
   position: absolute;
-  top: 3rem;
+  top: 5rem;
 }
 #homePageTitle1, #homePageTitle2 {
   color: #fff;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin: 0;
 }
 .townSection {
 	background: #1a3820;
 	color: #fff;
 	font-family: "Lato", sans-serif;
   border-radius: 2rem;
+  margin: 3rem 2rem;
 }
 .townSection h2 {
   color: #fff;
   margin-bottom: 0;
-  padding-top: 1rem;
+  padding: 1rem;
 }
 .townSection p {
   text-align: center;
@@ -181,10 +226,20 @@ section#fiveDayForecastSection, article, #fourmResponse {
   font-size: 0.75rem;
   letter-spacing: 0.1rem;
   margin-top: 0.1rem;
+  padding: 1rem;
 }
 .townSection img {
   width: 100%;
   border-radius: 2rem;
+}
+/* footer {
+  position: relative;
+} */
+footer #homePageTitle2 {
+ margin: 0.75rem 2rem;
+  font-size: 2rem;
+  font-family: "Poiret One", cursive;
+  text-align: center;
 }
 /* CSS RULES FOR THE GALLERY PAGE */
 .galleryContainer {
