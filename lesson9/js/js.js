@@ -37,8 +37,11 @@ const dayNames = [
 // This section allows the hamburger menu to toggle on and off
 
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("hide");
-    }
+    document.querySelector('nav#homeNav').classList.toggle("hide");
+    document.querySelector('span.top').classList.toggle("active");
+    document.querySelector('span.middle').classList.toggle("active");
+    document.querySelector('span.bottom').classList.toggle("active");
+}
 
 // This section adds Town Data from a JSON file to the Home Page
 

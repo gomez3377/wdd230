@@ -140,22 +140,31 @@ section#fiveDayForecastSection, article, #fourmResponse {
 }
 /* CSS RULES FOR THE HOME PAGE */
 #homePageHeader {
-  display: block;
+  display: flex;
   margin: 0;
   position: relative;
+  height: 50vh;
+  justify-content: center;
 }
 #homeHeroImg {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
 }
 #homeHeroImg img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   margin: 0;
   padding: 0;
 }
-.logo {
+#homePageHeader .logo {
   margin: 0;
   width: 4rem;
   position: absolute;
+  top: 0;
+  bottom: 0;
 }
 .buttonContainer {
   position: absolute;
@@ -164,6 +173,9 @@ section#fiveDayForecastSection, article, #fourmResponse {
   cursor: pointer;
   height: 27px;
   width: 35px;
+  background: none;
+  border: none;
+  z-index: 2;
 }
 
 
@@ -177,30 +189,60 @@ section#fiveDayForecastSection, article, #fourmResponse {
   cursor: pointer;
   top: 0;
   left: 0;
+  transition: 200ms ease-in;
 }
-.buttonContainer .active .top {
+.top.active {
   transform: translateY(11px) translateX(0) rotate(45deg);
+  transition:  200ms ease-in;
 
 }
-.buttonContainer .active .middle {
+.middle.active  {
   opacity: 0;
+  transition:  200ms ease-in;
 }
-.buttonContainer .active .bottom {
+.bottom.active {
   transform: translateY(-11px) translateX(0) rotate(-45deg);
-  
+  transition:  200ms ease-in;
 }
 .buttonContainer span:nth-of-type(2){
   top: 11px;
 }
 .buttonContainer span:nth-of-type(3){
   top: 22px;
+
 }
-.homePageTitles {
+#homeNav {
+  background: rgba(26,56,32,0.9);
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+  transition: 200ms ease-in;
+ 
+  opacity: 1;
+
+}
+#homeNav.hide {
+  opacity: 0;
+  top: -100%;
+  transition: 200ms ease-in;
+}
+#homeNav.show {
+  transition: 200ms ease-in;
+
+}
+#homeNav ul {
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+}
+/* .homePageTitles {
 	display: flex;
 	flex-direction: column;
   position: absolute;
   top: 5rem;
-}
+} */
 #homePageTitle1, #homePageTitle2 {
   color: #fff;
   text-align: center;

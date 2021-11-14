@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+.homepageHeader {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+}
+
+.homeImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.headerBody {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 3rem;
+}
+
+.title, .headerText {
+    margin: 0;
+    text-align: center;
+}
+.title {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: .5em;
+}
