@@ -78,7 +78,12 @@
   .townSection:nth-child(2n) {
     flex-direction: row-reverse;
   }
-  
+  .townSection picture {
+    width: 50%;
+  }
+  .townSection picture img {
+    width: 75%;
+  }
   /* CSS RULES FOR THE GALLERY PAGE */
   .galleryContainer {
     display: grid;

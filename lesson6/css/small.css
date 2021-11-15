@@ -279,11 +279,16 @@ section#fiveDayForecastSection, article, #fourmResponse {
   margin-top: 0.1rem;
   padding: 1rem;
 }
-.townSection img {
+.townSection picture img {
   width: 100%;
   border-radius: 2rem;
 }
-
+.townSection picture {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 footer #homePageTitle2 {
  margin: 0.75rem 2rem;
   font-size: 2rem;
