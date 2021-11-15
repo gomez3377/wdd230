@@ -226,6 +226,7 @@ section#fiveDayForecastSection, article, #fourmResponse {
   opacity: 1;
 
 }
+
 #homeNav.hide {
   opacity: 0;
   top: -100%;

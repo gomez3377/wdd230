@@ -1,23 +1,23 @@
 /* 35em is also 560px when basefont is 16px */
 @media only screen and (min-width: 35rem) {
-  nav {
+  #sharedNav {
     display: flex;
     justify-content: center;
   }
 
-  nav button {
+  #sharedNav button {
     display: none;
   }
-  nav ul.hide {
+  #sharedNav ul.hide {
     display: block;
   }
-  nav ul {
+  #sharedNav ul {
     margin-left: 2%;
   }
-  nav ul li {
+  #sharedNav ul li {
     float: left;
   }
-  nav ul li a {
+  #sharedNav ul li a {
     border: none;
     padding: 0.8rem 1rem;
     font-size: 0.9rem;
