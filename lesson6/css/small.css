@@ -76,7 +76,7 @@ nav ul li.active {
 nav ul li a.active {
   color: #1a3820;
 } 
-nav ul li:hover {
+nav ul li:hover{
   background-color: #55a630;
 }
 nav ul.hide {
@@ -162,7 +162,7 @@ section#fiveDayForecastSection, article, #fourmResponse {
   margin: 0;
   padding: 0;
 }
-#homePageHeader .logo {
+.logo {
   margin: 0;
   width: 4rem;
   position: absolute;
@@ -226,7 +226,12 @@ section#fiveDayForecastSection, article, #fourmResponse {
   opacity: 1;
 
 }
-
+#homeNav ul li {
+	transition: background-color 400ms ease-in-out;
+}
+#homeNav ul li:hover {
+  background-color: #55a630;
+}
 #homeNav.hide {
   opacity: 0;
   top: -100%;
@@ -278,14 +283,15 @@ section#fiveDayForecastSection, article, #fourmResponse {
   width: 100%;
   border-radius: 2rem;
 }
-/* footer {
-  position: relative;
-} */
+
 footer #homePageTitle2 {
  margin: 0.75rem 2rem;
   font-size: 2rem;
   font-family: "Poiret One", cursive;
   text-align: center;
+}
+.homeContactInfoSection p {
+	text-align: center;
 }
 /* CSS RULES FOR THE GALLERY PAGE */
 .galleryContainer {
@@ -403,6 +409,7 @@ fieldset {
 footer {
   background-color: #1a3820;
   padding: 1rem;
+  position: relative;
 }
 footer div,
 footer section {
