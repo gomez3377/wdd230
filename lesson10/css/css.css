@@ -1,0 +1,63 @@
+
+
+body {
+    background-image: linear-gradient(
+        -45deg,
+        #f4e409,
+        #eeba0b,
+        #c36f09,
+        #a63c06,
+        #710000
+    );
+    min-height: 100vh;
+    background-size: 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: bg-animation 20s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right}
+}
+
+header{
+    margin: 2rem 0;
+    background: rgba(255,255,255, 0.4);
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid #fff;
+}
+
+h1{
+    text-align: center;
+    font-family: "Josefin-Sans", sans-serif;
+    letter-spacing: 0.3rem;
+    color: #3d0f00;
+}
+
+main {
+    margin: 5rem 0;
+    background: rgba(255,255,255, 0.4);
+    border-radius: 2rem;
+    border: 1px solid #fff;
+    padding: 1rem ;
+}
+
+
+p {
+    padding: 1rem;
+    font-family: "Josefin-Sans", sans-serif;
+}
+
+p img {
+    float: right;
+    animation: logo-bounce 5s infinite alternate;
+}
+@keyframes logo-bounce {
+    0% {transform: translateY(-20px)
+    }
+    100% {transfrom: translateY(0px)}
+}
