@@ -252,7 +252,7 @@ section#fiveDayForecastSection, article, #fourmResponse {
   position: absolute;
   top: 5rem;
 } */
-#homePageTitle1, #homePageTitle2 {
+.homePageTitle1, .homePageTitle2 {
   color: #fff;
   text-align: center;
   font-size: 2rem;
@@ -289,7 +289,7 @@ section#fiveDayForecastSection, article, #fourmResponse {
 	justify-content: center;
 	align-items: center;
 }
-footer #homePageTitle2 {
+footer .homePageTitle2 {
  margin: 0.75rem 2rem;
   font-size: 2rem;
   font-family: "Poiret One", cursive;
