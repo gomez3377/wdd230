@@ -1,8 +1,5 @@
-// This section script places a automatic current date in the footer
 
-// This JS was based on the codepen by Alesha Anderson McCown
-// See for reference https://codepen.io/aleshana/pen/OJbJovG
-
+//---------------------Defining the Names of Each Day of the Week----------------------
 const dayNames = [
     "Sunday",
     "Monday",
@@ -10,8 +7,27 @@ const dayNames = [
     "Wednesday",
     "Thursday",
     "Friday",
-    "Saturday",
+    "Saturday"
   ];
+
+
+
+  const abbreviatedDayNames = [
+    "Sun",
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thur",
+    "Fri",
+    "Sat"
+  ];
+
+
+
+//----------------------Defining the Name of Each Month of the Year-------------------------
+
+
+
   const monthNames = [
       "January",
       "February",
@@ -27,19 +43,32 @@ const dayNames = [
       "December"
   
   ];
+
   
   const currentDate = new Date();
-  const currentWeekday = dayNames[currentDate.getDay()];
-  const currentDay = currentDate.getDate();
-  const currentMonth = monthNames [currentDate.getMonth()];
-  const currentYear = currentDate.getFullYear();
-  
-  const currentFullDate = currentWeekday + ", " + currentDay + " " + currentMonth + " " + currentYear; 
+  const currentWeekday = {
+    fullName: dayNames[currentDate.getDay()],
+    abbreviatedName: abbreviatedDayNames[currentDate.getDay()]
+  };
   
   
-  document.getElementById("currentDate").innerHTML = currentFullDate;
+  
+  const currentFullDate = {
+    Weekday: currentWeekday.fullName,
+    Day: currentDate.getDate(),
+    Month: monthNames [currentDate.getMonth()],
+    Year: currentDate.getFullYear()
+  };
+  
+  document.getElementById("currentDate").textContent = currentFullDate.Weekday +
+  ", " +
+  currentFullDate.Day + 
+  " " +
+  currentFullDate.Month + 
+  " " +
+  currentFullDate.Year;
 
-// This section allows the hamburger menu to toggle on and off
+//-----------------------------Toggling the Hamburger Menu----------------------------
 
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
@@ -49,7 +78,15 @@ function toggleMenu() {
 if (currentWeekday === "Friday") {
     document.getElementById("banner").style.display = "block";
 } 
-// Webfront Load 
+
+
+
+
+
+
+
+
+//--------------------------------- Webfront Load -------------------------------------------
 
 WebFont.load ({
     google: {
@@ -60,7 +97,17 @@ WebFont.load ({
     }
 });
 
+
+
+
+
+
+
 // ----------------------------------Kelvin To Fahrenheit Formula -----------------------------
+
+
+
+
 
 function kelvinToFahrenheit (K) {
     let f = (K - 273.15) *
@@ -71,7 +118,16 @@ function kelvinToFahrenheit (K) {
 }
 
 
+
+
+
+
 //---------------------------Wind Chill Formula-------------------------------
+
+
+
+
+
 
 function windChillFunc(t, s) {
     let f =
@@ -88,6 +144,9 @@ function windChillFunc(t, s) {
 
   
 // ----------------------------------------Current Weather API----------------------------------------
+
+
+
 
 
 const weatherapiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=16c8459fe7ad78ab492843e5df730694";
@@ -114,16 +173,70 @@ document.getElementById("windSpeed").textContent = currentWindSpeed;
 });
 
 
+
+
+
 // ------------------------------------------5 Day Forecast API ----------------------------------------
-const forcastapiURL = 
+
+
+
+
+
+const forcastapiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=16c8459fe7ad78ab492843e5df730694"
 fetch(forcastapiURL)
 .then((response)=> response.json())
 .then((jsObject)=> {
     console.log(jsObject);
+    let fiveDayArray = []; 
+    const fiveDayTempArray=[];
+    const fiveDayWeatherIcons=[];
+    for (i = 0; i < 40; i++){
+        if (jsObject.list[i].dt_txt.includes('18:00:00')) {
+          fiveDayTempArray.push(kelvinToFahrenheit(jsObject.list[i].main.temp) + "\u00B0F");
+          fiveDayWeatherIcons.push('https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + ".png");
+        }
+    }
+    for (i = 1; i <= 5; i++) {
+      fiveDayArray.push(abbreviatedDayNames[(currentDate.getDay()+ i) % 7]);
+      
+    }
+    
+    document.querySelector("#forcastDay1").textContent = fiveDayArray[0]; 
+    document.querySelector("#forecastTemp1").textContent = fiveDayTempArray[0]; 
+    document.querySelector("#forcastIcon1").setAttribute ('src' ,fiveDayWeatherIcons[0]); 
+    
+    
+    
+    document.querySelector("#forcastDay2").textContent = fiveDayArray[1]; 
+    document.querySelector("#forecastTemp2").textContent = fiveDayTempArray[1]; 
+    document.querySelector("#forcastIcon2").setAttribute ('src' , fiveDayWeatherIcons[1]); 
+    
+    
+    
+    document.querySelector("#forcastDay3").textContent = fiveDayArray[2]; 
+    document.querySelector("#forecastTemp3").textContent = fiveDayTempArray[2]; 
+    document.querySelector("#forcastIcon3").setAttribute ('src' ,fiveDayWeatherIcons[2]); 
+    
+    
+    
+    document.querySelector("#forcastDay4").textContent = fiveDayArray[3]; 
+    document.querySelector("#forecastTemp4").textContent = fiveDayTempArray[3]; 
+    document.querySelector("#forcastIcon4").setAttribute ('src' , fiveDayWeatherIcons[3]); 
+    
+    
+    
+    document.querySelector("#forcastDay5").textContent = fiveDayArray[4]; 
+    document.querySelector("#forecastTemp5").textContent = fiveDayTempArray[4]; 
+    document.querySelector("#forcastIcon5").setAttribute ('src' , fiveDayWeatherIcons[4]); 
+    
 });
 
 
 
+
+
+
+//-----------------------------------Getting the Wind Chill Value--------------------------------------
 
  parseFloat(
     document.querySelector("#currentTemperature").textContent
@@ -132,11 +245,18 @@ fetch(forcastapiURL)
   
   parseFloat(document.querySelector("#windSpeed").textContent);
   if (currentTemperature <= 50 && windSpeed > 3.0) {
-    windChill = windChillFunc(currentTemperature, windSpeed) + "&#176;F";
-  } else {
+    windChill = windChillFunc(currentTemperature, windSpeed) + "\u00B0F";
+  } 
+  else {
     windChill = "N/A";
   }
   
   
   document.getElementById("windChill").innerHTML = windChill;
+  
+
+
+
+  
+  
   

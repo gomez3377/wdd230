@@ -1,9 +1,25 @@
 
 body {
-  background: #d3daf5;
-  background: linear-gradient(90deg, #d3daf5 0, #C5f2ed 58%);
+ background-image: linear-gradient(45deg,
+ #e9c2ff,
+ #dccef3,
+ #d0d1f1,
+ #cddef4,
+ #cbe5f6,
+ #caecf7,
+ #cbf0f6,
+ #ccf5f5,
+ #c8f9f2);
+ height: 100vh;
+ background-size: 400%;
 font-family: "Josefin Sans", sans-serif;
+animation: bg-animation 40s infinite alternate;
 }
+@keyframes bg-animation {
+  0% {background-position: left;}
+  100% {background-position: right;}
+}
+
 .containerBox {
   position: relative;
   background: rgba(255,255,255,0.5);

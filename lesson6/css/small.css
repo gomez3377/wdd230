@@ -123,8 +123,12 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
-.fiveDayForecastIcons {
-  display: none;
+#fiveDayForecastSection h2 {
+  color: #fff;
+  font-size: 1.75rem;
+}
+.fiveDayForecastIcons h3 {
+  color: #fff;
 }
 section#fiveDayForecastSection {
   background-color: #294f17;
