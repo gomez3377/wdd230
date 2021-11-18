@@ -149,7 +149,7 @@ function windChillFunc(t, s) {
 
 
 
-const weatherapiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=16c8459fe7ad78ab492843e5df730694";
+const weatherapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=16c8459fe7ad78ab492843e5df730694";
 
 fetch(weatherapiURL)
 .then((response)=> response.json())
@@ -182,7 +182,7 @@ document.getElementById("windSpeed").textContent = currentWindSpeed;
 
 
 
-const forcastapiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=16c8459fe7ad78ab492843e5df730694"
+const forcastapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=16c8459fe7ad78ab492843e5df730694"
 fetch(forcastapiURL)
 .then((response)=> response.json())
 .then((jsObject)=> {
