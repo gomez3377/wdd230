@@ -43,12 +43,39 @@ header h1 {
 /* The navigation bar */
 
 nav button {
-  margin: 0.2rem 2%;
-  background-color: transparent;
+  margin: 1rem 5%;
+  background: none;
   border: none;
   font-size: 2.5rem;
   color: #fff;
+  cursor: pointer;
+  height: 27px;
+  width: 35px;
+  position: relative;
+ 
+  
 }
+
+nav button span {
+    background: #fff;
+    border: none;
+    border-radius: 15rem;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    transition: 200ms ease-in;
+  }
+
+  nav button span:nth-of-type(2) {
+    top: 11px
+  }
+  nav button span:nth-of-type(3) {
+    top: 22px
+  }
+
 
 nav {
   background-color: #1a3820;
@@ -126,16 +153,33 @@ h3 {
 #fiveDayForecastSection h2 {
   color: #fff;
   font-size: 1.75rem;
+  padding: 1rem;
+  background: #294f17;
 }
 .fiveDayForecastIcons h3 {
   color: #fff;
+  background: #294f17;
+  padding: 1rem;
 }
 section#fiveDayForecastSection {
-  background-color: #294f17;
   margin: 0 2%;
+  display: flex;
+  flex-direction: column;
 }
 section#fiveDayForecastSection h3 {
   color: #fff;
+}
+.\35 dayforcastContainers {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+}
+.\35 dayforcastContainers p {
+	font-size: 1.5rem;
+	text-align: center;
+	color: #fff;
+	padding: 1rem;
+  background: #294f17;
 }
 section#fiveDayForecastSection, article, #fourmResponse {
     font-family: "Lato", sans-serif;

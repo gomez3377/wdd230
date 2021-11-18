@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Preston</title>
-   
+
     <link rel="stylesheet" href="../lesson6/css/small.css" />
     <link rel="stylesheet" href="../lesson6/css/meduim.css" />
     <link rel="stylesheet" href="../lesson6/css/large.css" />
@@ -27,10 +27,16 @@
       </div>
     </header>
     <nav id="sharedNav" class="clearfix">
-      <button onclick="toggleMenu()">&#9776;</button>
+      <button class="navButtonContainer" onclick="toggleMenu()">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </button>
       <ul id="primaryNav" class="hide">
         <li><a href="../lesson9/index.html">Home</a></li>
-        <li class="active"><a class="active" href="preston-4.html">Preston</a></li>
+        <li class="active">
+          <a class="active" href="preston-4.html">Preston</a>
+        </li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
@@ -41,17 +47,26 @@
       <h2>Preston Idaho</h2>
       <div id="weatherSummarySection">
         <picture id="heroImage">
-          <source media="(max-width: 545px)" srcset="images/heroImage200.jpg">
-          <source media="(max-width: 1007px)" srcset="images/heroImage500.jpg">
-          <source media="(max-width: 2500px)" srcset="images/heroImage800.jpg">
-          <img  src="images/heroImage1280.jpg" alt="heroImage" />
+          <source media="(max-width: 545px)" srcset="images/heroImage200.jpg" />
+          <source
+            media="(max-width: 1007px)"
+            srcset="images/heroImage500.jpg"
+          />
+          <source
+            media="(max-width: 2500px)"
+            srcset="images/heroImage800.jpg"
+          />
+          <img src="images/heroImage1280.jpg" alt="heroImage" />
         </picture>
         <section id="weatherSummary">
           <h3 id="weatherSummaryHeader">Weather Summary</h3>
           <div id="weatherDetails">
-            <p>Currently: <span id="currentWeather"></span> <span id="currentTemperature"></span>&#176;F</p>
+            <p>
+              Currently: <span id="currentWeather"></span>
+              <span id="currentTemperature"></span>&#176;F
+            </p>
             <p>High: <span id="currentHighTemperature"></span>&#176;F</p>
-            <p>Humidity <span id="currentHumidity"></span>  </p>
+            <p>Humidity <span id="currentHumidity"></span></p>
             <p>Wind Speed: <span id="windSpeed"></span>mph</p>
             <p>Wind Chill: <span id="windChill"></span></p>
           </div>
@@ -62,44 +77,51 @@
         <div class="fiveDayForecastIcons">
           <div class="5dayforcastContainers">
             <h3><span id="forcastDay1"></span></h3>
-            <img src="" alt="day1" id="forcastIcon1">
+            <img src="" alt="day1" id="forcastIcon1" />
             <p><span id="forecastTemp1"></span></p>
           </div>
           <div class="5dayforcastContainers">
             <h3><span id="forcastDay2"></span></h3>
-            <img src="" alt="day3" id="forcastIcon2">
+            <img src="" alt="day3" id="forcastIcon2" />
             <p><span id="forecastTemp2"></span></p>
-            
           </div>
           <div class="5dayforcastContainers">
             <h3><span id="forcastDay3"></span></h3>
-            <img src="" alt="day2" id="forcastIcon3">
-            <p><span id="forecastTemp3" ></span></p>
-            
+            <img src="" alt="day2" id="forcastIcon3" />
+            <p><span id="forecastTemp3"></span></p>
           </div>
           <div class="5dayforcastContainers">
             <h3><span id="forcastDay4"></span></h3>
-            <img src="" alt="day4" id="forcastIcon4">
-            
+            <img src="" alt="day4" id="forcastIcon4" />
+
             <p><span id="forecastTemp4"></span></p>
           </div>
           <div class="5dayforcastContainers">
             <h3><span id="forcastDay5"></span></h3>
-            <img src="" alt="day5" id="forcastIcon5">
-            <p><span id="forecastTemp5" ></span></p>
+            <img src="" alt="day5" id="forcastIcon5" />
+            <p><span id="forecastTemp5"></span></p>
           </div>
         </div>
       </section>
       <article id="mainArticle">
         <h3>Pumpkin Harvest</h3>
         <picture>
-          <source media="(max-width: 545px)" srcset="images/pumpkinArticleImg500.jpg">
-          <source media="(max-width: 1007px)" srcset="images/pumpkinArticleImg800.jpg">
-          <source media="(max-width: 2500px)" srcset="images/pumpkinArticleImg500.jpg">
+          <source
+            media="(max-width: 545px)"
+            srcset="images/pumpkinArticleImg500.jpg"
+          />
+          <source
+            media="(max-width: 1007px)"
+            srcset="images/pumpkinArticleImg800.jpg"
+          />
+          <source
+            media="(max-width: 2500px)"
+            srcset="images/pumpkinArticleImg500.jpg"
+          />
           <img
-          id="articleImg"
-          src="images/pumpkinArticleImg.jpg"
-          alt="articleImg"
+            id="articleImg"
+            src="images/pumpkinArticleImg.jpg"
+            alt="articleImg"
           />
         </picture>
         <p class="articleContent">
@@ -118,33 +140,49 @@
     </main>
     <footer>
       <div id="mapAndContactInfoContainer">
-
         <section class="placeholder">
           <h3 id="contactInfoHeader">Contact Information</h3>
           <p>&#9993; gom12011@byui.edu</p>
           <p>&#9742; 111-222-1234</p>
-        <div id="socialMediaContainer">
-          <img class="socialMediaLink" src="images/facebook.png" alt="facebook">
-          <img class="socialMediaLink" src="images/twitter.png" alt="twitter">
-          <img class="socialMediaLink" src="images/instagram.png" alt="instagram">
-        </div>
+          <div id="socialMediaContainer">
+            <img
+              class="socialMediaLink"
+              src="images/facebook.png"
+              alt="facebook"
+            />
+            <img
+              class="socialMediaLink"
+              src="images/twitter.png"
+              alt="twitter"
+            />
+            <img
+              class="socialMediaLink"
+              src="images/instagram.png"
+              alt="instagram"
+            />
+          </div>
         </section>
         <picture>
-          <source media="(max-width:545px )" srcset="images/prestonMap500.jpg">
-          <source media="(max-width:1007px )" srcset="images/prestonMap800.jpg">
-          <source media="(max-width:2500px )" srcset="images/prestonMap.jpg">
+          <source
+            media="(max-width:545px )"
+            srcset="images/prestonMap500.jpg"
+          />
+          <source
+            media="(max-width:1007px )"
+            srcset="images/prestonMap800.jpg"
+          />
+          <source media="(max-width:2500px )" srcset="images/prestonMap.jpg" />
           <img id="locationMap" src="images/prestonMap.jpg" alt="footerMap" />
         </picture>
       </div>
-        <div id=footerBar>
-          <span>
-            &#169; The Beautiful Outdoors | Attributions | Jonathon Gomez</span
-            ><br />
-            <span id="currentDate"></span>
-          </div>
+      <div id="footerBar">
+        <span>
+          &#169; The Beautiful Outdoors | Attributions | Jonathon Gomez</span
+        ><br />
+        <span id="currentDate"></span>
+      </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/preston-10.js"></script>
-    
   </body>
 </html>

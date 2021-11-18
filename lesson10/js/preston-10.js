@@ -72,6 +72,9 @@ const dayNames = [
 
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
+    document.querySelector("span.top").classList.toggle("active");
+    document.querySelector("span.middle").classList.toggle("active");
+    document.querySelector("span.bottom").classList.toggle("active");
 }
 
     
@@ -154,7 +157,7 @@ const weatherapiURL = "https://api.openweathermap.org/data/2.5/weather?id=560447
 fetch(weatherapiURL)
 .then((response)=> response.json())
 .then((jsObject)=> {
-console.log(jsObject);
+
 
 const currentWeather = jsObject.weather[0].main;
 const currentTemperature = kelvinToFahrenheit(jsObject.main.temp);
@@ -186,7 +189,6 @@ const forcastapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=56044
 fetch(forcastapiURL)
 .then((response)=> response.json())
 .then((jsObject)=> {
-    console.log(jsObject);
     let fiveDayArray = []; 
     const fiveDayTempArray=[];
     const fiveDayWeatherIcons=[];
