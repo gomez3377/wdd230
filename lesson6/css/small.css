@@ -29,7 +29,6 @@ header div#banner {
   
 }
 a {
-  text-decoration: none;
   color: #fff;
 }
 /* 
@@ -67,29 +66,29 @@ nav button {
   height: 27px;
   width: 35px;
   position: relative;
- 
+  
   
 }
 
 nav button span {
-    background: #fff;
-    border: none;
-    border-radius: 15rem;
-    height: 4px;
-    width: 100%;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    transition: 200ms ease-in;
-  }
+  background: #fff;
+  border: none;
+  border-radius: 15rem;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  transition: 200ms ease-in;
+}
 
-  nav button span:nth-of-type(2) {
-    top: 11px
-  }
-  nav button span:nth-of-type(3) {
-    top: 22px
-  }
+nav button span:nth-of-type(2) {
+  top: 11px
+}
+nav button span:nth-of-type(3) {
+  top: 22px
+}
 
 
 nav {
@@ -107,6 +106,7 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 1.75rem 2%;
+  text-decoration: none;
   
   font-size: 2rem;
   line-height: 2rem;
