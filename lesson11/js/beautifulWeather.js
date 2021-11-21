@@ -195,10 +195,9 @@ fetch(forcastapiURL)
     for (i = 0; i < 40; i++){
         if (jsObject.list[i].dt_txt.includes('18:00:00')) {
           fiveDayTempArray.push(kelvinToFahrenheit(jsObject.list[i].main.temp) + "\u00B0F");
-          fiveDayWeatherIcons.push( 'https://openweathermap.org/img/w/'+ jsObject.list[i].weather[0].icon + '.png');
+          fiveDayWeatherIcons.push( + jsObject.list[i].weather[0].icon + ".png");
         }
     }
-    console.log(fiveDayWeatherIcons);
     for (i = 1; i <= 5; i++) {
       fiveDayArray.push(abbreviatedDayNames[(currentDate.getDay()+ i) % 7]);
       
@@ -206,7 +205,7 @@ fetch(forcastapiURL)
     
     document.querySelector("#forcastDay1").textContent = fiveDayArray[0]; 
     document.querySelector("#forecastTemp1").textContent = fiveDayTempArray[0]; 
-    document.querySelector("#forcastIcon1").setAttribute ('src', fiveDayWeatherIcons[0]); 
+    document.querySelector("#forcastIcon1").setAttribute ('src' ,fiveDayWeatherIcons[0]); 
     
     
     

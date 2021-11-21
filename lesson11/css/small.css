@@ -1,0 +1,512 @@
+
+/* ---------------------------------------------THE BEAUTFIUL WEATHER CSS STYLESHEET--------------------------------------------------------------- */
+
+/* ---------------------------------------------CSS RULES FOR MOBILE DEVICES------------------------------------------------------------------ */
+
+/* ---------------------------------------------CSS RULES SHARED THROUGHOUT THE PAGES--------------------------------------------------------- */
+
+/*----------------------------------------------HEADER----------------------------------------------------------------------------------------*/
+header {
+
+display: flex;
+  flex-direction: column;
+  margin: 0 2%;
+}
+header div#banner {
+  padding: 0.75rem;
+  background: #1a3820;
+  font-family: "Poiret One", curisve;
+  color: #fff;
+  letter-spacing: 0.25rem;
+  font-size: 0.85rem;
+
+  text-align: center;
+  display: none;
+}
+.logoAndTitleContainer {
+  display: flex;
+  flex-direction: row;
+  
+}
+a {
+  color: #fff;
+}
+/* 
+.logoAndTitleContainer img {
+  margin: 0;
+  width: 4rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+} */
+header h1 {
+  color: #55a630;
+  font-family: "Poiret One", cursive;
+  padding: 0.2rem;
+  margin-bottom: 0;
+  font-size: 1.75rem;
+  letter-spacing: 0.25rem;
+}
+#motto {
+  padding: 0.2rem;
+  font-size: 0.65rem;
+  /* text-align: center; */
+  font-family: "Lato", sans-serif;
+  color: #1a3820;
+}
+/* The navigation bar */
+
+nav button {
+  margin: 1rem 5%;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  height: 27px;
+  width: 35px;
+  position: relative;
+  
+  
+}
+
+nav button span {
+  background: #fff;
+  border: none;
+  border-radius: 15rem;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  transition: 200ms ease-in;
+}
+
+nav button span:nth-of-type(2) {
+  top: 11px
+}
+nav button span:nth-of-type(3) {
+  top: 22px
+}
+
+
+nav {
+  background-color: #1a3820;
+  font-family: "Poiret One", cursive;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  transition: background-color 400ms ease-in-out;
+}
+nav ul li a {
+  display: block;
+  padding: 1.75rem 2%;
+  text-decoration: none;
+  
+  font-size: 2rem;
+  line-height: 2rem;
+}
+nav ul li.active {
+  background-color: #fff;
+}
+nav ul li a.active {
+  color: #1a3820;
+} 
+nav ul li:hover{
+  background-color: #55a630;
+}
+nav ul.hide {
+  display: none;
+}
+
+main {
+  margin: 0 auto;
+}
+
+/* The Hero Image */
+#weatherSummarySection {
+  margin: 10px auto;
+  position: relative;
+}
+
+#heroImage img, #responseImage img {
+  display: block;
+  width: 96%;
+  margin: 0 2%;
+}
+div#weatherDetails {
+  font-family: 'Poiret One', sans-serif;
+  padding: 0.75rem;
+  background: #1a3820;
+  color: #fff;
+  letter-spacing: 0.25rem;
+}
+
+/* The Main Section  */
+h2,
+h3 {
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  color: #294f17;
+  letter-spacing: 0.25rem;
+}
+#weatherSummary {
+  margin: 0 2%;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+#fiveDayForecastSection h2 {
+  color: #fff;
+  font-size: 1.75rem;
+  padding: 1rem;
+  background: #294f17;
+}
+.fiveDayForecastIcons h3 {
+  color: #fff;
+  background: #294f17;
+  padding: 1rem;
+}
+section#fiveDayForecastSection {
+  margin: 0 2%;
+  display: flex;
+  flex-direction: column;
+}
+section#fiveDayForecastSection h3 {
+  color: #fff;
+}
+.\35 dayforcastContainers {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+}
+.\35 dayforcastContainers p {
+	font-size: 1.5rem;
+	text-align: center;
+	color: #fff;
+	padding: 1rem;
+  background: #294f17;
+}
+section#fiveDayForecastSection, article, #fourmResponse {
+    font-family: "Lato", sans-serif;
+    padding: 1.5rem;
+    margin: 10% 2%;
+}
+#articleImg {
+  width: 100%;
+}
+/* CSS RULES FOR THE HOME PAGE */
+#homePageHeader {
+  display: flex;
+  margin: 0;
+  position: relative;
+  height: 50vh;
+  justify-content: center;
+}
+#homeHeroImg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+#homeHeroImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  margin: 0;
+  width: 4rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.buttonContainer {
+  position: absolute;
+  top: 7%;
+  right: 4%;
+  cursor: pointer;
+  height: 27px;
+  width: 35px;
+  background: none;
+  border: none;
+  z-index: 2;
+}
+
+
+.buttonContainer span {
+  background: #fff;
+  border: none;
+  border-radius: 15rem;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  transition: 200ms ease-in;
+}
+.top.active {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  transition:  200ms ease-in;
+
+}
+.middle.active  {
+  opacity: 0;
+  transition:  200ms ease-in;
+}
+.bottom.active {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  transition:  200ms ease-in;
+}
+.buttonContainer span:nth-of-type(2){
+  top: 11px;
+}
+.buttonContainer span:nth-of-type(3){
+  top: 22px;
+
+}
+#homeNav {
+  background: rgba(26,56,32,0.9);
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+  transition: 200ms ease-in;
+ 
+  opacity: 1;
+
+}
+#homeNav ul li {
+	transition: background-color 400ms ease-in-out;
+}
+#homeNav ul li:hover {
+  background-color: #55a630;
+}
+#homeNav.hide {
+  opacity: 0;
+  top: -100%;
+  transition: 200ms ease-in;
+}
+#homeNav.show {
+  transition: 200ms ease-in;
+
+}
+#homeNav ul {
+  transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+}
+/* .homePageTitles {
+	display: flex;
+	flex-direction: column;
+  position: absolute;
+  top: 5rem;
+} */
+.homePageTitle1, .homePageTitle2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+.townSection {
+	background: #1a3820;
+	color: #fff;
+	font-family: "Lato", sans-serif;
+  border-radius: 2rem;
+  margin: 3rem 2rem;
+}
+.townSection h2 {
+  color: #fff;
+  margin-bottom: 0;
+  padding: 1rem;
+}
+.townSection p {
+  text-align: center;
+}
+.townSection p:first-of-type{
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0.1rem;
+  padding: 1rem;
+}
+.townSection picture img {
+  width: 100%;
+  border-radius: 2rem;
+}
+.townSection picture {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer .homePageTitle2 {
+ margin: 0.75rem 2rem;
+  font-size: 2rem;
+  font-family: "Poiret One", cursive;
+  text-align: center;
+}
+.homeContactInfoSection p {
+	text-align: center;
+}
+/* CSS RULES FOR THE GALLERY PAGE */
+.galleryContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+picture {
+  width: 85%;
+}
+img.galleryPics {
+  width: 100%;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+img.galleryPics:hover {
+  box-shadow: 0 0 50px #1a3820;
+}
+
+.picCaption {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.25rem;
+  color: #1a3820;
+  padding: 1rem;
+}
+
+/* CSS RULES FOR THE FOURM PAGE*/
+form {
+	margin: 5% 2%;
+}
+fieldset {
+  margin-bottom: 15%;
+  background: #1a3820;
+  border: none;
+  border-radius: 2rem;
+}
+.forumTop , .forumSbs {
+	display: block;
+	/* margin: 3% 2%; */
+	font-family: "Poiret One",cursive;
+	font-size: 1.5rem;
+  color: #fff;
+	letter-spacing: 0.15rem;
+	padding: 1rem;
+}
+.forumTop input {
+  display: block;
+  margin: 3% 0;
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 1.5rem;
+  border: none;
+  background: rgba(255, 255,255,0.1);
+  letter-spacing: 0.15rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.forumSbs input {
+  margin: 3% 0;
+  padding: 0.75rem;
+}
+.forumTop input:required {
+  background: rgba(239, 35, 60, 0.4); 
+}
+.forumTop input:required:valid{
+  background: rgba(85, 166, 48, 0.4);
+}
+
+.submitBtn {
+  margin: 5% 0;
+  padding: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  background: #1a3820;
+  color: #fff;
+  font-family: "Poiret One", cursive;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  transition: 250ms background ease-in-out;
+}
+
+.submitBtn:hover {
+  background: #55a630;
+}
+#stormRegion {
+	font-family: "Lato", sans-serif;
+	display: block;
+	margin: 5% 0;
+	padding: 0.75rem;
+	border-radius: 1.5rem;
+	border: none;
+	background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+#stormRegion option {
+	background: #1a3720;
+	font-family: "Lato", sans-serif;
+  transition: 250ms background ease-in-out ;
+}
+#stormRegion option:hover {
+	background: #55a630;
+	
+  
+}
+#comments {
+	
+  margin: 5% 0;
+}
+
+/* The Footer */
+footer {
+  background-color: #1a3820;
+  padding: 1rem;
+  position: relative;
+}
+footer div,
+footer section {
+  font-family: "Poiret One", cursive;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  letter-spacing: 0.25rem;
+}
+#locationMap {
+  width: 100%;
+}
+footer div {
+  text-align: center;
+}
+h3#contactInfoHeader {
+  color: #55a630;
+  font-size: 1.75rem;
+}
+div#socialMediaContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+img.socialMediaLink {
+  width: 15%;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
