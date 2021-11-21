@@ -195,7 +195,7 @@ fetch(forcastapiURL)
     for (i = 0; i < 40; i++){
         if (jsObject.list[i].dt_txt.includes('18:00:00')) {
           fiveDayTempArray.push(kelvinToFahrenheit(jsObject.list[i].main.temp) + "\u00B0F");
-          fiveDayWeatherIcons.push('https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + ".png");
+          fiveDayWeatherIcons.push( + jsObject.list[i].weather[0].icon + ".png");
         }
     }
     for (i = 1; i <= 5; i++) {
