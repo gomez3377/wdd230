@@ -1,0 +1,109 @@
+/* ---------------------------------------------THE BEAUTFIUL WEATHER CSS STYLESHEET--------------------------------------------------------------- */
+
+/* ---------------------------------------------CSS RULES FOR MOBILE DEVICES------------------------------------------------------------------ */
+
+/* ---------------------------------------------CSS RULES SHARED THROUGHOUT THE PAGES--------------------------------------------------------- */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poiret One", cursive;
+  text-align: center;
+  color: #294f17;
+}
+
+.logoAndTitleContainer,
+main,
+.mapAndContactInfoContainer,
+.footerBar {
+  margin: 0 2rem;
+}
+
+nav,
+section,
+.fiveDayforcastContainers h3,
+.fiveDayforcastContainers p,
+footer {
+  background-color: #294f17;
+}
+a,
+section,
+section h2,
+section h3,
+footer {
+  color: #fff;
+}
+
+.logoAndTitleContainer {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+}
+.logoAndTitleContainer img,
+.titleAndMotto,
+.fiveDayforcastContainers {
+  display: flex;
+}
+.titleAndMotto,
+.fiveDayforcastContainers {
+  flex-direction: column;
+  align-items: center;
+}
+nav ul li a {
+  text-decoration: none;
+}
+/* ---------------------------------------------CSS RULES SPECIFIC TO THE TOWN PAGES--------------------------------------------------------- */
+
+.banner {
+  display: none;
+}
+
+.logoAndTitleContainer img {
+  justify-self: center;
+  align-self: center;
+  width: 5rem;
+}
+
+picture img {
+  width: 100%;
+}
+
+.fiveDayforcastContainers {
+  background: #fff;
+}
+/*
+nav button,
+div#weatherDetails,
+#fiveDayForcastSection h2,
+.fiveDayForecastIcons h3,
+.\35 day forecastContainers p,
+.homePageTitle1, 
+.homePageTitle2,
+.townSection,
+.townSection h2,
+.forumTop,
+.forumSbs,
+.forumTop input,
+.submitBtn,
+#stormRegion,
+
+section, footer, nav {
+    background-color: #294f17;
+}
+
+
+h2,
+h3,
+.\35 dayforcastContainers p,
+#homeNav,
+.townSection p{
+    text-align: center;
+} */
+
+/*----------------------------------------------HEADER----------------------------------------------------------------------------------------*/
+
