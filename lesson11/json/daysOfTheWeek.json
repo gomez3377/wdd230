@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Sunday",
+    "abbreviatedName": "Sun"
+  },
+  {
+    "name": "Monday",
+    "abbreviatedName": "Mon"
+  },
+  {
+    "name": "Tuesday",
+    "abbreviatedName": "Tue"
+  },
+  { "name": "Wednesday", 
+    "abbreviatedName": "Wed" 
+},
+  {
+    "name": "Thursday",
+    "abbreviatedName": "Thur"
+  },
+  { "name": "Friday", 
+    "abbreviatedName": "Fri" 
+},
+  { "name": "Saturday", "abbreviatedName": "Sat" 
+}
+]
