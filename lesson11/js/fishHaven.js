@@ -42,7 +42,7 @@ function windChillFunc(t, s) {
 
 
 
-const weatherapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=16c8459fe7ad78ab492843e5df730694";
+const weatherapiURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&appid=16c8459fe7ad78ab492843e5df730694";
 
 fetch(weatherapiURL)
 .then((response)=> response.json())
@@ -75,7 +75,7 @@ document.querySelector(".windSpeed").textContent = currentWindSpeed;
 
 
 
-const forcastapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=16c8459fe7ad78ab492843e5df730694"
+const forcastapiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&appid=16c8459fe7ad78ab492843e5df730694"
 fetch(forcastapiURL)
 .then((response)=> response.json())
 .then((jsObject)=> {
@@ -133,9 +133,9 @@ fetch(sodaSpringsTownEventsjQuery)
   let townEvent2 = document.createElement('p');
   let townEvent3 = document.createElement('p');
   
-  townEvent1.textContent = jsonObject.towns[0].events[0];
-  townEvent2.textContent = jsonObject.towns[0].events[1];
-  townEvent3.textContent = jsonObject.towns[0].events[2];
+  townEvent1.textContent = jsonObject.towns[2].events[0];
+  townEvent2.textContent = jsonObject.towns[2].events[1];
+  townEvent3.textContent = jsonObject.towns[2].events[2];
   
   document.querySelector('.upcomingEvents').appendChild(townEvent1);
   document.querySelector('.upcomingEvents').appendChild(townEvent2);
