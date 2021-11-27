@@ -5,6 +5,9 @@
 /* ---------------------------------------------CSS RULES SHARED THROUGHOUT THE PAGES--------------------------------------------------------- */
 body {
   font-family: "Lato", sans-serif;
+  line-height: 1.75rem;
+  letter-spacing: 0.15rem;
+  color: #1a3820;
 }
 
 h1,
@@ -16,6 +19,9 @@ h6 {
   font-family: "Poiret One", cursive;
   text-align: center;
   color: #294f17;
+  padding: 1rem;
+  letter-spacing: 0.25rem;
+  line-height: 3rem;
 }
 
 .logoAndTitleContainer,
@@ -32,10 +38,12 @@ section,
 footer {
   background-color: #294f17;
 }
+
 a,
 section,
 section h2,
 section h3,
+hr,
 footer {
   color: #fff;
 }
@@ -73,37 +81,129 @@ picture img {
   width: 100%;
 }
 
+nav button span,
 .fiveDayforcastContainers {
   background: #fff;
 }
-/*
-nav button,
-div#weatherDetails,
-#fiveDayForcastSection h2,
-.fiveDayForecastIcons h3,
-.\35 day forecastContainers p,
-.homePageTitle1, 
-.homePageTitle2,
-.townSection,
-.townSection h2,
-.forumTop,
-.forumSbs,
-.forumTop input,
-.submitBtn,
-#stormRegion,
-
-section, footer, nav {
-    background-color: #294f17;
-}
-
-
-h2,
-h3,
-.\35 dayforcastContainers p,
-#homeNav,
-.townSection p{
-    text-align: center;
-} */
 
 /*----------------------------------------------HEADER----------------------------------------------------------------------------------------*/
 
+.weatherDetails {
+	padding: 1rem 2rem;
+}
+
+/* .fiveDayforcastContainers p {
+  padding: 1rem;
+} */
+
+.upcomingEvents p {
+  padding: 1rem 2rem;
+  margin: 0;
+}
+nav button {
+  margin: 1rem 5%;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  height: 27px;
+  width: 35px;
+  position: relative;
+  
+  
+}
+nav button span {
+  border: none;
+  border-radius: 15rem;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  transition: 200ms ease-in;
+}
+nav button span:nth-of-type(2) {
+  top: 11px
+}
+nav button span:nth-of-type(3) {
+  top: 22px
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1.75rem 5%;
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+h2 {
+	font-size: 2em;
+	margin-bottom: 0;
+}
+.fiveDayforcastContainers img {
+  width: 25%;
+}
+
+cite a {
+  color: #1a3820;
+}
+.motto {
+	margin-bottom: 2rem;
+}
+
+.socialMediaContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 3rem 0;
+}
+
+nav ul li {
+  transition: background-color 400ms ease-in-out;
+}
+
+nav ul li.active {
+  background-color: #fff;
+}
+nav ul li a.active {
+  color: #1a3820;
+} 
+nav ul li:hover{
+  background-color: #55a630;
+}
+nav ul li a:hover{
+color: #fff;
+}
+nav ul.hide {
+  display: none;
+}
+.buttonContainer span:nth-of-type(2){
+  top: 11px;
+}
+.buttonContainer span:nth-of-type(3){
+  top: 22px;
+  
+}
+.top.active {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  transition:  200ms ease-in;
+
+}
+.middle.active  {
+  opacity: 0;
+  transition:  200ms ease-in;
+}
+.bottom.active {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  transition:  200ms ease-in;
+}

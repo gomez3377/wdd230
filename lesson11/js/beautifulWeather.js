@@ -71,10 +71,10 @@ const dayNames = [
 //-----------------------------Toggling the Hamburger Menu----------------------------
 
 function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("hide");
-    document.querySelector("span.top").classList.toggle("active");
-    document.querySelector("span.middle").classList.toggle("active");
-    document.querySelector("span.bottom").classList.toggle("active");
+    document.querySelector(".primaryNav").classList.toggle("hide");
+    document.querySelector(".top").classList.toggle("active");
+    document.querySelector(".middle").classList.toggle("active");
+    document.querySelector(".bottom").classList.toggle("active");
 }
 
     
