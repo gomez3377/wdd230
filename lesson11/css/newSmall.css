@@ -36,7 +36,7 @@ section,
 .fiveDayforcastContainers h3,
 .fiveDayforcastContainers p,
 footer {
-  background-color: #294f17;
+  background-color: #1a3820;
 }
 
 a,
@@ -206,4 +206,12 @@ nav ul.hide {
 .bottom.active {
   transform: translateY(-11px) translateX(0) rotate(-45deg);
   transition:  200ms ease-in;
+}
+article p {
+  margin-bottom: 3rem;
+  line-height: 2.25rem;
+  text-indent: 3rem ;
+}
+article p:first-of-type {
+  text-indent: 0;
 }
