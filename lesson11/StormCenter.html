@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storm Center</title>
+    <link rel="stylesheet" href="../lesson6/css/small.css" />
+    <link rel="stylesheet" href="../lesson6/css/meduim.css" />
+    <link rel="stylesheet" href="../lesson6/css/large.css" />
+    <link rel="stylesheet" href="../lesson6/css/normalize.css" />
+</head>
+<body>
+    <header class="clearfix">
+        <div id="banner">
+          Preston Pankcakes in the Park! 9:00 a.m. Saturday at the city park
+          pavillion.
+        </div>
+        <div class="logoAndTitleContainer">
+          <img src="../lesson6/images/beatifulWeatherlogo.png" alt="beatifulWeatherLogo" />
+          <div class="titleAndMotto">
+            <h1>The Beautiful Outdoors</h1>
+            <div id="motto">Presenting Idaho's Beauty</div>
+          </div>
+        </div>
+      </header>
+      <nav id="sharedNav" class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="../lesson9/index.html">Home</a></li>
+          <li ><a href="../lesson10/preston10.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li class="active"><a class="active" href="#">Storm Center</a></li>
+          <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <main class="clearfix">
+        <h2>Storm Center</h2>
+        <form action="thankspage.html" method="get">
+          <fieldset>
+            <label class="forumTop">First Name* <input type="text" name="fname" id="fname" required></label>
+            <label class="forumTop">Email <input type="email" placeholder="someone@gmail.com"></label>
+            <label class="forumTop" >Phone Number* <input type="tel" name="phone" placeholder="1234561234" required></label>
+            <label class="forumTop" >Zip Code* <input type="number" required></label>
+          </fieldset>
+          <fieldset>
+
+            <label class="forumTop">Storm Date <input type="date" name="stormDate"></label>
+            <label class="forumTop" for="stormTypeChoice">Storm Type <input list="stormtype" name="stormType" id="stormTypeChoice"> <datalist id="stormType">
+              <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+            </datalist> </label>
+              <label class="forumTop" for="">Storm Severity <input type="range" name="severity" id="severity" minlength="1" maxlength="10"> </label>
+              <label class="forumTop" for="">Storm Region
+                <select name="stormRegion" id="stormRegion">
+                  <option value="" selected disabled>Select Region</option>
+                  <option value="fishHaven">Fish Haven</option>
+                  <option value="preston">Preston</option>
+                  <option value="sodaSprings">Soda Springs</option>
+                </select>
+              </label>
+              <div class="forumTop">User In Danger?</div>
+          
+               <label class="forumSbs">  <input type="radio" name="yes" value="yes">Yes</label>
+                <label class="forumSbs"><input type="radio" name="no" value="no">No</label>
+              <label class="forumSbs"><input type="radio" name="maybe" value="maybe">Maybe</label>
+           
+            </fieldset>
+            <fieldset>
+
+              <label class="forumTop">Additional Information or Comments
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+              </label>
+            </fieldset>
+            <input class="submitBtn" type="submit" value="Submit">
+          </form>
+      </main>
+      <footer>
+        <div id="mapAndContactInfoContainer">
+          <section class="placeholder">
+            <h3 id="contactInfoHeader">Contact Information</h3>
+            <p>&#9993; gom12011@byui.edu</p>
+            <p>&#9742; 111-222-1234</p>
+            <div id="socialMediaContainer">
+              <img
+                class="socialMediaLink"
+                src="../lesson6/images/facebook.png"
+                alt="facebook"
+              />
+              <img
+                class="socialMediaLink"
+                src="../lesson6/images/twitter.png"
+                alt="twitter"
+              />
+              <img
+                class="socialMediaLink"
+                src="../lesson6/images/instagram.png"
+                alt="instagram"
+              />
+            </div>
+          </section>
+          <!-- <picture>
+              <source media="(max-width:545px )" srcset="images/prestonMap500.jpg">
+              <source media="(max-width:1007px )" srcset="images/prestonMap800.jpg">
+              <source media="(max-width:2500px )" srcset="images/prestonMap.jpg">
+              <img id="locationMap" src="images/prestonMap.jpg" alt="footerMap" />
+            </picture> -->
+        </div>
+        <div id="footerBar">
+          <span>
+            &#169; The Beautiful Outdoors | Attributions | Jonathon Gomez</span
+          ><br />
+          <span class="currentDate"></span>
+        </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="js/beautifulWeather.js"></script>
+    </body>
+
+</html>
