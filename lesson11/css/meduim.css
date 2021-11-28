@@ -3,18 +3,18 @@
   header h1 {
     font-size: 3rem;
   }
-  #motto {
+  .motto {
     font-size: 1.25em;
   }
-  #sharedNav {
+  .sharedNav {
     display: flex;
     justify-content: center;
   }
 
-  #sharedNav button {
+  .sharedNav button {
     display: none;
   }
-  #sharedNav ul.hide {
+  .sharedNav ul.hide {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(6, 1fr);
@@ -22,7 +22,7 @@
   
   }
  
-  #sharedNav ul li a {
+  .sharedNav ul li a {
     border: none;
     padding: 0.8rem 1rem;
     font-size: 1.5em;
@@ -35,7 +35,7 @@
   header img {
     justify-content: end;
   }
-  #weatherSummary {
+  .weatherSummary {
     position: absolute;
     top: 50px;
     left: 50px;
@@ -46,11 +46,11 @@
     backdrop-filter: blur(2.5px);
     padding: 2%;
   }
-  #weatherSummaryHeader {
+  .weatherSummaryHeader {
     color: white;
     margin-bottom: 0.5rem;
   }
-  div#weatherDetails {
+  div.weatherDetails {
     background: none;
     padding-top: 0.25rem;
   }
@@ -65,7 +65,7 @@
   img.forcastIcons {
     width: 100%;
   }
-  img#articleImg {
+  img.articleImg {
     float: right;
     right: 5rem;
     width: 25%;

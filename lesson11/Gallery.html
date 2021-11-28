@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery Page</title>
-    <link rel="stylesheet" href="../lesson6/css/small.css" />
+    <link rel="stylesheet" href="css/newSmall.css" />
     <link rel="stylesheet" href="../lesson6/css/meduim.css" />
     <link rel="stylesheet" href="../lesson6/css/large.css" />
     <link rel="stylesheet" href="../lesson6/css/normalize.css" />
@@ -16,19 +16,23 @@
         <img src="images/beatifulWeatherlogo.png" alt="beatifulWeatherLogo" />
         <div class="titleAndMotto">
           <h1>The Beautiful Outdoors</h1>
-          <div id="motto">Presenting Idaho's Beauty</div>
+          <div class="motto">Presenting Idaho's Beauty</div>
         </div>
       </div>
     </header>
-    <nav id="sharedNav" class="clearfix">
-      <button onclick="toggleMenu()">&#9776;</button>
-      <ul id="primaryNav" class="hide">
-        <li><a href="../lesson9/index.html">Home</a></li>
-        <li ><a href="../lesson10/preston10.html">Preston</a></li>
-        <li><a href="#">Soda Springs</a></li>
-        <li><a href="#">Fish Haven</a></li>
-        <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
-        <li class="active"><a class="active" href="../lesson7/gallery-7.html">Gallery</a></li>
+    <nav class="sharedNav" class="clearfix">
+      <button onclick="toggleMenu()">
+        <span class="top"></span>
+        <span class="middle"></span>
+<span class="bottom"></span>
+      </button>
+      <ul class="primaryNav hide">
+        <li><a href="index.html">Home</a></li>
+        <li ><a href="Preston.html">Preston</a></li>
+        <li><a href="SodaSprings.html">Soda Springs</a></li>
+        <li><a href="FishHaven.html">Fish Haven</a></li>
+        <li><a href="StormCenter.html">Storm Center</a></li>
+        <li class="active"><a class="active" href="#">Gallery</a></li>
       </ul>
     </nav>
     <main>
@@ -119,18 +123,17 @@
           />
           <p class="picCaption">
             A sunset brings out color on these stormy clouds
-          </p></picture
-        >
+          </p></picture>
       </div>
-      <div id="countervisitor"></div>
+      <div class="countervisitor"></div>
     </main>
     <footer>
-      <div id="mapAndContactInfoContainer">
+      <div class="mapAndContactInfoContainer">
         <section class="placeholder">
-          <h3 id="contactInfoHeader">Contact Information</h3>
-          <p>&#9993; gom12011@byui.edu</p>
+          <h3 class="contactInfoHeader">Contact Information</h3>
+          <p>&#9993; beautifulweather@tbw.com</p>
           <p>&#9742; 111-222-1234</p>
-          <div id="socialMediaContainer">
+          <div class="socialMediaContainer">
             <img
               class="socialMediaLink"
               src="images/facebook.png"
@@ -148,14 +151,8 @@
             />
           </div>
         </section>
-        <!-- <picture>
-            <source media="(max-width:545px )" srcset="images/prestonMap500.jpg">
-            <source media="(max-width:1007px )" srcset="images/prestonMap800.jpg">
-            <source media="(max-width:2500px )" srcset="images/prestonMap.jpg">
-            <img id="locationMap" src="images/prestonMap.jpg" alt="footerMap" />
-          </picture> -->
       </div>
-      <div id="footerBar">
+      <div class="footerBar">
         <span>
           &#169; The Beautiful Outdoors | Attributions | Jonathon Gomez</span
         ><br />
