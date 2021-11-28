@@ -420,6 +420,11 @@ img.galleryPics:hover {
 	justify-content: center;
 	align-items: center;
 }
+.upcomingEvents {
+	margin: 0 auto;
+	margin-bottom: 3rem;
+	max-width: 40rem;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
