@@ -34,8 +34,11 @@ main,
 .mapAndContactInfoContainer,
 .footerBar
  {
-  margin: 0 2rem;
+  margin: 0 auto;
+  max-width: 75%;
 }
+
+  
 
 nav,
 section,
@@ -75,6 +78,9 @@ footer,
 }
 nav ul li a {
   text-decoration: none;
+}
+footer{
+  position: relative;
 }
 /* ---------------------------------------------CSS RULES SPECIFIC TO THE TOWN PAGES--------------------------------------------------------- */
 
@@ -239,12 +245,8 @@ nav ul.hide {
 article p {
   margin-bottom: 3rem;
   line-height: 2.25rem;
-  text-indent: 3rem ;
 }
-article p:first-of-type,
-blockquote p {
-  text-indent: 0;
-}
+
 .forumTop input {
   padding: 0.75rem;
   max-width: 15rem;
@@ -318,9 +320,11 @@ img.galleryPics:hover {
   position: relative;
   height: 50vh;
   justify-content: center;
+  flex-direction: column;
 }
 .homeHeroImg {
   width: 100%;
+  height: 100%;
   position: absolute;
   z-index: -1;
 }
@@ -391,6 +395,7 @@ img.galleryPics:hover {
 .townSection {
 	background: #1a3820;
   border-radius: 2rem;
+  margin-bottom: 2rem;
 }
 .townSection h2 {
   margin-bottom: 0;
@@ -421,4 +426,11 @@ img.galleryPics:hover {
   content: "";
   display: table;
   clear: both;
+}
+.logo {
+  margin: 0;
+  width: 4rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }

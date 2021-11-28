@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Storm Center</title>
     <link rel="stylesheet" href="css/newSmall.css">
-    <link rel="stylesheet" href="../lesson6/css/meduim.css" />
-    <link rel="stylesheet" href="../lesson6/css/large.css" />
-    <link rel="stylesheet" href="../lesson6/css/normalize.css" />
+    <link rel="stylesheet" href="css/meduim.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
 </head>
 <body>
     <header class="clearfix">
@@ -21,7 +21,7 @@
         </div>
       </header>
       <nav class="sharedNav" class="clearfix">
-        <button onclick="toggleMenu()">
+        <button class="navButtonContainer" onclick="toggleMenu()">
           <span class="top"></span>
           <span class="middle"></span>
   <span class="bottom"></span>
@@ -80,25 +80,25 @@
           </form>
       </main>
       <footer>
-        <div id="mapAndContactInfoContainer">
+        <div class="mapAndContactInfoContainer">
           <section class="placeholder">
-            <h3 id="contactInfoHeader">Contact Information</h3>
-            <p>&#9993; gom12011@byui.edu</p>
+            <h3 class="contactInfoHeader">Contact Information</h3>
+            <p>&#9993; beautifulweather@tbw.com</p>
             <p>&#9742; 111-222-1234</p>
             <div class="socialMediaContainer">
               <img
                 class="socialMediaLink"
-                src="../lesson6/images/facebook.png"
+                src="images/facebook.png"
                 alt="facebook"
               />
               <img
                 class="socialMediaLink"
-                src="../lesson6/images/twitter.png"
+                src="images/twitter.png"
                 alt="twitter"
               />
               <img
                 class="socialMediaLink"
-                src="../lesson6/images/instagram.png"
+                src="images/instagram.png"
                 alt="instagram"
               />
             </div>
@@ -106,7 +106,9 @@
         </div>
         <div class="footerBar">
           <span>
-            &#169; The Beautiful Outdoors | Attributions | Jonathon Gomez</span
+            &#169; The Beautiful Outdoors | Attributions :
+            <a href="https://openweathermap.org/">Open Weather Map</a> | Jonathon
+            Gomez</span
           ><br />
           <span class="currentDate"></span>
         </div>
