@@ -1,0 +1,82 @@
+#typographyTable,
+#colorSchemeTable {
+  margin: auto;
+  width: 50%;
+}
+td {
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+#primary {
+  color: #274b8f;
+  font-size: 64px;
+  font-family: sans-serif;
+}
+
+#textColor {
+  color: #3d3d3d;
+  font-size: 24px;
+}
+
+#samplecolor1,
+#sampleText1 {
+  background-color: #274b8f;
+}
+
+#samplecolor2,
+#sampleText2 {
+  background-color: #507687;
+}
+
+#samplecolor3,
+#sampleText3 {
+  background-color: #507687;
+}
+.samplecolor4 {
+  background-color: #278f78;
+}
+#samplecolor5 {
+  background-color: #182f0e;
+}
+#sampleText1 {
+  color: white;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+}
+
+#sampleText2 {
+  color: white;
+  font-size: 30px;
+  font-family: "Public Sans", sans-serif;
+}
+
+#sampleText3 {
+  color: white;
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+}
+
+#sampleText4,
+#sampleText5,
+#sampleText6 {
+  color: #278f78;
+  font-family: "Playfair Display", serif;
+}
+
+#sampleText4 {
+  font-size: 30px;
+}
+
+#sampleText5 {
+  font-size: 25px;
+}
+
+#sampleText6 {
+  font-size: 20px;
+}
+
+#sampleText7 {
+  color: #182f0e;
+  font-size: 16px;
+  font-family: "Public Sans", sans-serif;
+}
