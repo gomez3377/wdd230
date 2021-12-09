@@ -7,15 +7,15 @@
     width: 35rem;
   }
 
-  #motto {
+  .motto {
     text-align: left;
   }
   /* The navigation bar */
-  #sharedNav ul li {
+  .sharedNav ul li {
     justify-content: center;
     align-items: center;
   }
-  #sharedNav ul li a {
+  .sharedNav ul li a {
     padding: 0.6rem 1rem;
     font-size: 1.75rem;
     
@@ -23,15 +23,11 @@
   header h1 {
     font-size: 2.5rem;
   }
-  #motto {
+  .motto {
     font-size: 1rem;
   }
   /* The Main Section */
-  main {
-    max-width: 75%;
-  }
 
-  
   p.articleContent {
     line-height: 2rem;
   }
@@ -39,19 +35,19 @@
   .buttonContainer{
     display: none;
   }
-  #homeNav {
+  .homeNav {
     background:none;
   }
-  #homeNav.hide{
+  .homeNav.hide{
     
     top:0;
   opacity:1
 }
 
-  #homeNav ul.hide {
+  .homeNav ul.hide {
     display:block
   }
-  #homeNav ul {
+  .homeNav ul {
     transform: translateY(0); 
     
     top: 0;
@@ -59,12 +55,13 @@
     display: flex;
     background: rgba(25, 56,22, 0.5);
   }
-  #homeNav ul li:hover {
+  .homeNav ul li:hover {
     background-color: rgba(85, 166,48, 0.5);
   }
   .townCards {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
   }
   .townSection, .townSection:nth-child(2n) {
     flex-direction: column;
@@ -75,7 +72,7 @@
   .townSection picture img {
     width: 100%;
   }
-  .homeContactInfoSection #contactInfoHeader {
+  .homeContactInfoSection .contactInfoHeader {
     text-align: center;
   }
   /* CSS RULES FOR THE GALLERY PAGE */
@@ -84,12 +81,12 @@
   max-width: 100%;
 }
   /* The Footer  */
-  div#mapAndContactInfoContainer {
+  div.mapAndContactInfoContainer {
     display: flex;
     flex-direction: row-reverse;
   }
 
-  h3#contactInfoHeader {
+  h3.contactInfoHeader {
     text-align: left;
   }
 
