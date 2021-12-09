@@ -11,7 +11,47 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
+    <header>
+        <h1>Rupert Chamber of Commerce</h1>
+        <button onclick="toggleMenu()" class="buttonContainer">
+          
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </button>
+        <nav class="headerNav hide">
+          <ul>
+            <li><a href="chamberHome.html">Home</a></li>
+            <li><a href="city.html">Town Information</a></li>
+            <li><a href="directory.html">Business Directory</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="join.html">Join Us</a></li>
+          </ul>
+        </nav>
+        <picture class="heroImg">
+            <source media="(max-width: 200px )" srcset="images/homePageImages/homeHeroImg200.jpg" />
+            <source media="(max-width: 500px )" srcset="images/homePageImages/homeHeroImg500.jpg" />
+            <source media="(max-width: 800px )" srcset="images/homePageImages/homeHeroImg800.jpg" />
+            <source media="(max-width: 1200px )" srcset="images/homePageImages/homeHeroImg1280.jpg" />
+            <img  src="images/homePageImages/homeHeroimg.jpg" alt="homeHeroImg" />
+          </picture>
+        <div class="pageTag">
+            <p>Motto</p>
+            <label for=""><input type="button" value="Join Us"></label>
+        </div>
+    </header>
+    <footer>
+        <h2>Contact Info</h2>
+        <p></p>
+        <p></p>
+        <p></p>
+        <div class="socialContainer">
     
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </footer>
     <script src="js/chamber.js"></script>
 </body>
 </html>
