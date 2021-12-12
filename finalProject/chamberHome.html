@@ -1,146 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rupert Chamber of Commerce</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
-</head>
-<body>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
     <header>
-        <h1>Rupert Chamber of Commerce</h1>
-        <button onclick="toggleMenu()" class="buttonContainer">
-          
-          <span class="top"></span>
-          <span class="middle"></span>
-          <span class="bottom"></span>
-        </button>
-        <nav class="headerNav hide">
-          <ul>
-            
-            <li><a href="city.html">Town Information</a></li>
-            <li><a href="directory.html">Business Directory</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="join.html">Join Us</a></li>
-          </ul>
-        </nav>
-        <picture class="heroImg">
-            <source media="(max-width: 200px )" srcset="images/homePageImages/homeHeroImg200.jpg" />
-            <source media="(max-width: 500px )" srcset="images/homePageImages/homeHeroImg500.jpg" />
-            <source media="(max-width: 800px )" srcset="images/homePageImages/homeHeroImg800.jpg" />
-            <source media="(max-width: 1200px )" srcset="images/homePageImages/homeHeroImg1280.jpg" />
-            <img  src="images/homePageImages/homeHeroimg.jpg" alt="homeHeroImg" />
-          </picture>
-        <div class="pageTag">
-            <p>Motto</p>
-            <label for=""><input type="button" value="Join Us"></label>
-        </div>
-    </header>
-<main>
-    <nav>
+      <img src="images/commerceLogoSmall.png" alt="logo" />
+      <h1>Rupert Chamber of Commerce</h1>
+      <button onclick="toggleMenu()" class="buttonContainer">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </button>
+      <nav class="headerNav hide">
         <ul>
-            <li><a href="">Local Ad</a></li>
-            <li><a href="">Local Weather</a></li>
-            <li><a href="">Upcoming Events</a></li>
+          <li><a href="city.html">Town Information</a></li>
+          <li><a href="directory.html">Business Directory</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="join.html">Join Us</a></li>
         </ul>
-    </nav>
+      </nav>
+      <picture class="heroImg">
+        <source
+          media="(max-width: 200px )"
+          srcset="images/rupertHeroImg200.jpg"
+        />
+        <source
+          media="(max-width: 500px )"
+          srcset="images/rupertHeroImg500.jpg"
+        />
+        <source
+          media="(max-width: 800px )"
+          srcset="images/rupertHeroImg800.jpg"
+        />
+        <img src="images/rupertHeroImg.jpg" alt="homeHeroImg" />
+      </picture>
+      <div class="pageTag">
+        <p>Motto</p>
+        <label for=""><input type="button" value="Join Us" /></label>
+      </div>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="">Local Ad</a></li>
+          <li><a href="">Local Weather</a></li>
+          <li><a href="">Upcoming Events</a></li>
+        </ul>
+      </nav>
 
-    <section>
+      <section>
         <h2>About Us</h2>
         <p></p>
-        <img src="" alt="">
-    </section>
-    
-    <section>
+        <img src="" alt="" />
+      </section>
+
+      <section>
         <h2>Local Ads</h2>
         <div class="businessCards">
-            <h3>Business</h3>
-            <p></p>
-            <img src="" alt="">
+          <h3>Business</h3>
+          <p></p>
+          <img src="" alt="" />
         </div>
-    </section>
-    
-    <section class="localWeather">
+      </section>
+
+      <section class="localWeather">
         <h2>Local Weather</h2>
         <section>
-            <h3>Weather Summary</h3>
-            <div class="weatherDetails">
-                <p>
-                    Currently: <span class="currentWeather"></span>
-                    <span class="currentTemperature"></span>&#176;F
-                </p>
-                <p>High: <span class="currentHighTemperature"></span>&#176;F</p>
-                <p>Humidity <span class="currentHumidity"></span></p>
-                <p>Wind Speed: <span class="windSpeed"></span>mph</p>
-                <p>Wind Chill: <span class="windChill"></span></p>
-            </div>
+          <h3>Weather Summary</h3>
+          <div class="weatherDetails">
+            <p>
+              Currently: <span class="currentWeather"></span>
+              <span class="currentTemperature"></span>&#176;F
+            </p>
+            <p>High: <span class="currentHighTemperature"></span>&#176;F</p>
+            <p>Humidity <span class="currentHumidity"></span></p>
+            <p>Wind Speed: <span class="windSpeed"></span>mph</p>
+            <p>Wind Chill: <span class="windChill"></span></p>
+          </div>
         </section>
         <section class="threeDayForecast">
-            <div class="threeDayForcastContainers">
-                <h3 class="forcastDay1">_</h3>
-                <p class="forecastTemp1High">_</p>
-                <p class="forecastTemp1Low">_</p>
-                <img
-                src="https://via.placeholder.com/50X50/1A3820/FFFFFF.png?text=Placeholder"
-                alt="day1"
-                class="forcastIcon1"
-                />
-            </div>
-            <div class="threeDayForcastContainers">
-                <h3 class="forcastDay2">_</h3>
-                <p class="forecastTemp2High">_</p>
-                <p class="forecastTemp2Low">_</p>
-                <img
-                  src="https://via.placeholder.com/50X50/1A3820/FFFFFF.png?text=Placeholder"
-                  alt="day2"
-                  class="forcastIcon2"
-                  />
-                </div>
-                <div class="threeDayForcastContainers">
-                    <h3 class="forcastDay3">_</h3>
-                    <p class="forecastTemp3High">_</p>
-                    <p class="forecastTemp3Low">_</p>
-                    <img
-                    src="https://via.placeholder.com/50X50/1A3820/FFFFFF.png?text=Placeholder"
-                    alt="day3"
-                    class="forcastIcon3"
-                    />
-                </div>
-            </section>
+          <div class="threeDayForcastContainers">
+            <h3 class="forcastDay1">_</h3>
+            <p class="forecastTemp1High">_</p>
+            <p class="forecastTemp1Low">_</p>
+            <img
+              src="https://via.placeholder.com/50X50/274b8f/FFFFFF.png?text=Placeholder"
+              alt="day1"
+              class="forcastIcon1"
+            />
+          </div>
+          <div class="threeDayForcastContainers">
+            <h3 class="forcastDay2">_</h3>
+            <p class="forecastTemp2High">_</p>
+            <p class="forecastTemp2Low">_</p>
+            <img
+              src="https://via.placeholder.com/50X50/274b8f/FFFFFF.png?text=Placeholder"
+              alt="day2"
+              class="forcastIcon2"
+            />
+          </div>
+          <div class="threeDayForcastContainers">
+            <h3 class="forcastDay3">_</h3>
+            <p class="forecastTemp3High">_</p>
+            <p class="forecastTemp3Low">_</p>
+            <img
+              src="https://via.placeholder.com/50X50/274b8f/FFFFFF.png?text=Placeholder"
+              alt="day3"
+              class="forcastIcon3"
+            />
+          </div>
         </section>
-        
-        <section>
-            <h2>Local Events</h2>
-            <div class="eventCards">
-                <h3>Business</h3>
-                <p></p>
-                <img src="" alt="">
-            </div>
-        </section>
-        
-        <section class="Join Us">
-            <h2>Join Us</h2>
-            <p></p>
-            <label for=""><input type="button" value="Join Us"></label>
-            <img src="" alt="">
-        </section>
-    </main>
-<footer>
-    <h2>Contact Info</h2>
-    <p></p>
-    <p></p>
-    <p></p>
-    <div class="socialContainer">
+      </section>
 
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>
-</footer>
+      <section>
+        <h2>Local Events</h2>
+        <div class="eventCards">
+          <h3>A Musical Christmas</h3>
+          <p>
+            A non-denominational tribute to Jesus Christ, Handel’s “Messiah”
+            singalong directed by Craig Jessop — best known for his tenure
+            directing the Mormon Tabernacle Choir — will be held at 7:30 p.m.
+            Dec. 17 at the Wilson Theatre.
+          </p>
+          <img src="" alt="" />
+        </div>
+        <div class="eventCards">
+          <h3>New Years Beet Drop</h3>
+          <p>
+            Come to the Rupert Town Square on December 31, 2021 for this year's
+            Beet Drop!. This year Royal Bliss will ringing 2022 downtown at the
+            Rupert Square. This is a free show and all ages are welcome.
+          </p>
+          <img src="" alt="" />
+        </div>
+        <div class="eventCards">
+          <h3>Sister Act The Musical</h3>
+          <p>
+            The Historic Wilson Theatre proudly presents Sister Act The Musical.
+            Based off the 1992 movie “Sister Act” come and be transported into
+            the 70’s. Sister Act will make you laugh, cry and you will want to
+            dance the night away .
+          </p>
+          <img src="" alt="" />
+        </div>
+      </section>
+
+      <section class="Join Us">
+        <h2>Join Us</h2>
+        <p></p>
+        <label for=""><input type="button" value="Join Us" /></label>
+        <img src="" alt="" />
+      </section>
+    </main>
+    <footer>
+      <h2>Contact Info</h2>
+      <p></p>
+      <p></p>
+      <p></p>
+      <div class="socialContainer">
+        <img src="images/facebook.png" alt="facebook" />
+        <img src="images/instagram.png" alt="instagram" />
+        <img src="images/twitter.png" alt="twitter" />
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/chamber.js"></script>
-</body>
+    <script src="js/chamberHome.js"></script>
+  </body>
 </html>

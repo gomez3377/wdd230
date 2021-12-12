@@ -1,0 +1,105 @@
+[
+    {
+        "name": "Burgers Ect.",
+        "owner": "Roger & Sindy Gray",
+        "address": "124 S. Oneida",
+        "city and state" : "Rupert, ID 83350",
+        "phone" : "208-436-0600",
+        "logo" : "",
+        "description" :"",
+        "website": ""
+    },
+    {
+        "name": "Drift Inn",
+        "owner": "Kim Naylor",
+        "address": "545 F St.",
+        "city and state" : "Rupert, ID 83350",
+        "phone" : "208-436-1300",
+        "logo" : "img/driftInnLogo.jpg",
+        "description" :"",
+        "website": "https://driftinnidaho.com/"
+    },
+    {
+        "name": "Family Vision & Eye Care",
+        "owner": "Todd Slusser",
+        "address": "714 G St.",
+        "city and state" : "Rupert, ID 83350",
+        "phone" : "208-436-3455",
+        "logo" : "img/familyVisionLogo.jpg",
+        "description" :"",
+        "website": "https://familyvisionrupert.com/"
+    },
+
+    {
+        "name": "Four Paws Bed and Bath",
+        "owner": "Cathy Kraus",
+        "address": "370 W 200 S",
+        "city and state" : "Rupert, ID 83350",
+        "phone" : "208-438-4444",
+        "logo" : "img/fourPawsLogo.jpg",
+        "description" :"",
+        "website": "https://www.fourpawsbedandbath.com/"
+    },
+    {
+        "name": "Gem State Entertainment",
+        "owner": "Ryan McEuen",
+        "address": "622 E Street",
+        "city and state" : "Rupert, ID 83350",
+        "phone" : "208-931-1540",
+        "logo" : "img/GSElogo.jpg",
+        "description" :"",
+        "website": "https://www.gemstateentertainment.com/"
+    },
+    {
+        "name": "The Historic Wilson Theatre",
+        "owner": "Kris Faux",
+        "address": "610 Fremont Ave.",
+        "city and state" : "Rupert, ID 83350",
+        "phone" : "208-436-2787",
+        "logo" : "img/wilsontheatrelogo.jpg",
+        "description" :"",
+        "website": "https://www.historicwilsontheatre.com/"
+    },
+    {
+        "name": "Project Mutual Telephone",
+        "owner": "Stephanie Mickelsen",
+        "address": "507 G St.",
+        "city and state" : "Rupert, ID 83350",
+        "phone" : "208-436-7151",
+        "logo" : "img/pmtLogo.jpg",
+        "description" :"",
+        "website": "https://pmt.org/"
+    },
+    {
+        "name": "Soda Frenzy",
+        "owner": "Melissa Lynch",
+        "address": "310 South Oneida St.",
+        "city and state" : "Rupert, ID 83350",
+        "phone" : "208-312-6990",
+        "logo" : "img/sodafrenzyLogo.jpg",
+        "description" :"",
+        "website": "https://sodafrenzy.com/"
+    },
+    {
+        "name": "Studio K Portrait Gallery",
+        "owner": "Katrina Hoffman",
+        "address": "713 N 300 W",
+        "city and state" : "Rupert, ID 83350",
+        "phone" : "208-431-7689",
+        "logo" : "img/studioKLogo.jpg",
+        "description" :"",
+        "website": "https://www.studiokportrait.com/"
+    },
+    {
+        "name": "Wayside Cafe",
+        "owner": "Xana Brice",
+        "address": "325 S. Hwy 24",
+        "city and state" : "Rupert, ID 83350",
+        "phone" : "208-436-4800",
+        "logo" : "",
+        "description" :"",
+        "website": ""
+    }
+]
+ 
+

@@ -1,0 +1,15 @@
+body {
+    background-color: #ebebeb;
+    font-family: "Public Sans", sans-serif;
+    color: #3d3d3d;
+}
+
+
+h1, h2 , h3 {
+    font-family: "Playfair Display" , serif;
+    color: #278f78;
+}
+
+main {
+    margin: 0 auto;
+}
