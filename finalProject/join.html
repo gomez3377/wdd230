@@ -13,6 +13,7 @@
 </head>
 <body>
     <header>
+      <img src="images/commerceLogoSmall.png" alt="logo" />
         <h1>Rupert Chamber of Commerce</h1>
         <button onclick="toggleMenu()" class="buttonContainer">
           
@@ -37,22 +38,92 @@
             <img  src="images/homePageImages/homeHeroimg.jpg" alt="homeHeroImg" />
           </picture>
         <div class="pageTag">
-            <p>Motto</p>
+            <p></p>
             <label for=""><input type="button" value="Join Us"></label>
         </div>
     </header>
+    <main>
+      <section class="benefitsToJoin">
+        <h2>Benefits for Joining</h2>
+        <p></p>
+        <img src="" alt="benefitsImg">
+      </section>
+      <form action="response.html" method="get">
+        <fieldset>
+          <label class="forumTop">First Name*: <input type="text" name="fname" id="fname" required></label>
+          <label class="forumTop">Last Name*: <input type="text" name="lname" id="lname" required></label>
+          <label class="forumTop">Title: <input type="text" placeholder="Dr." name="title" id="title"></label>
+          <label class="forumTop">Email: <input type="email" placeholder="someone@gmail.com" name="email"></label>
+          <label class="forumTop" >Phone Number*: <input type="tel" name="phone" placeholder="1234561234" required></label>
+          <img src="" alt="formImg" class="formImg">
+        </fieldset>
+        
+        <fieldset>
+          <label class="forumTop">Business Name*: <input type="text" name="businessname" id="businessname" required></label>
+          <label class="forumTop">Business Address*: <input type="text" name="businessaddress" id="businessaddress" required></label>
+          <label class="forumTop">Business Website: <input type="text" name="website" placeholder="wwww.website.com"></label>
+          <label class="forumTop">Business Description: <input type="text" name="businessdescription"></label>
+          
+          <img src="" alt="formImg" class="formImg">
+        </fieldset>
+        <section class="membershipSection">
+          <h2>Membership Level Selection</h2>
+          <div class="membershipLevelCards">
+            <h3>Bronze</h3>
+            <h4>$350</h4>
+            <p>Benefits</p>
+            <ul>
+              <li>Member Recognition Plaque</li>
+              <li>Ribbon Cutting / Grand Opening / Open House</li>
+              <li>Chamber Website Landing Page</li>
+              <li>Community Marketing Support</li>
+              <li>...And Many More</li>
+            </ul>
+            <input class="submitBtn" type="submit" value="Sign Up">
+          </div>
+          <div class="membershipLevelCards">
+            <h3>Bronze</h3>
+            <h4>$650</h4>
+            <p>Benefits</p>
+            <ul>
+              <li>Same Benefits as Silver</li>
+              <li>Priority Website Placement of Business</li>
+              <li>Unlimited Chamber Website Directory Page</li>
+              <li>Photo of Business In Trustee Comference Room</li>
+              <li>...And Many More</li>
+            </ul>
+            <input class="submitBtn" type="submit" value="Sign Up">
+          </div>
+          <div class="membershipLevelCards">
+            <h3>Silver</h3>
+            <h4>$450</h4>
+            <p>Benefits</p>
+            <ul>
+              <li>Same Benfits as Bronze</li>
+              <li>Business Materials in Relocation Packets</li>
+              <li>Free Use of Chamber of Commerce Conference Room</li>
+              <li>Rupert Chamber Cash Program Participant</li>
+              <li>Job Listing Submissions</li>
+            </ul>
+            <input class="submitBtn" type="submit" value="Sign Up">
+          </div>
+        </section>
+      </form>
+    </main>
     <footer>
-        <h2>Contact Info</h2>
-        <p></p>
-        <p></p>
-        <p></p>
+      <h2>Contact Info</h2>
+      <p>Phone Number: 208-679-4793</p>
+      <p>Fax Number: 208-679-4794</p>
+      <p>Street Address: 1177 7th Street
+        Heyburn, ID 83336</p>
         <div class="socialContainer">
-    
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+          <img src="images/facebook.png" alt="facebook" />
+          <img src="images/instagram.png" alt="instagram" />
+          <img src="images/twitter.png" alt="twitter" />
         </div>
+        <div class="footerBar"><a href="attributions.html">Attributions Page</a></div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/chamber.js"></script>
 </body>
 </html>

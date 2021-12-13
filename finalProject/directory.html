@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rupert Chamber of Commerce</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">k
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
 
     <link rel="stylesheet" href="css/small.css">
@@ -14,6 +14,7 @@
 </head>
 <body>
     <header>
+      <img src="images/commerceLogoSmall.png" alt="logo" />
         <h1>Rupert Chamber of Commerce</h1>
         <button onclick="toggleMenu()" class="buttonContainer">
           
@@ -42,19 +43,31 @@
             <label for=""><input type="button" value="Join Us"></label>
         </div>
     </header>
-    <main></main>
+    <main>
+      <h2>Business Directory</h2>
+      <button><img src="images/gridIcon.png" alt="gridIcon"></button>
+      <button><img src="images/listIcon.png" alt="listIcon"></button>
+      
+      <div class="localBusinesses">
+
+      </div>
+    </main>
     <footer>
-        <h2>Contact Info</h2>
-        <p></p>
-        <p></p>
-        <p></p>
+      <h2>Contact Info</h2>
+      <p>Phone Number: 208-679-4793</p>
+      <p>Fax Number: 208-679-4794</p>
+      <p>Street Address: 1177 7th Street
+        Heyburn, ID 83336</p>
         <div class="socialContainer">
     
             <img src="images/facebook.png" alt="facebook">
             <img src="images/instagram.png" alt="instagram">
             <img src="images/twitter.png" alt="twitter">
         </div>
+        <div class="footerBar"><a href="attributions.html">Attributions Page</a></div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/chamber.js"></script>
+    <script src="js/directory.js"></script>
 </body>
 </html>
