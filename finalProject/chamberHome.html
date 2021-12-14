@@ -13,13 +13,16 @@
   </head>
   <body>
     <header>
-      <img src="images/commerceLogoSmall.png" alt="logo" />
-      <h1>Rupert Chamber of Commerce</h1>
-      <button onclick="toggleMenu()" class="buttonContainer">
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
-      </button>
+      <div class="responsiveHeader">
+
+        <img src="images/commerceLogoSmall.png" alt="logo" />
+        <h1>Rupert Chamber of Commerce</h1>
+        <button onclick="toggleMenu()" class="buttonContainer">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </button>
+      </div>
       <nav class="headerNav hide">
         <ul>
           <li><a href="city.html">Town Information</a></li>
@@ -28,23 +31,26 @@
           <li><a href="join.html">Join Us</a></li>
         </ul>
       </nav>
-      <picture class="heroImg">
-        <source
+      <div class="heroSection">
+
+        <picture class="heroImg">
+          <source
           media="(max-width: 200px )"
           srcset="images/HomePageImg/heroImg200.jpg"
-        />
-        <source
+          />
+          <source
           media="(max-width: 500px )"
           srcset="images/HomePageImg/heroImg500.jpg"
-        />
-        <source
+          />
+          <source
           media="(max-width: 800px )"
           srcset="images/HomePageImg/heroImg800.jpg"
-        />
-        <img src="images/HomePageImg/heroImg.jpg" alt="homeHeroImg" />
-      </picture>
-      <div class="pageTag">
-        <label for=""><input type="button" value="Grow With Us" /></label>
+          />
+          <img src="images/HomePageImg/heroImg.jpg" alt="homeHeroImg" />
+        </picture>
+        <div class="pageTag">
+          <label for=""><input type="button" value="Grow With Us" /></label>
+        </div>
       </div>
     </header>
     <main>
