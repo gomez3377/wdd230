@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
+    
     <header>
-      <img src="images/commerceLogoSmall.png" alt="logo" />
-      <h1>Rupert Chamber of Commerce</h1>
-      <button onclick="toggleMenu()" class="buttonContainer">
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
-      </button>
+        <div class="responsiveHeader">
+        <img src="images/commerceLogoSmall.png" alt="logo" />
+        <h1>Rupert Chamber of Commerce</h1>
+        <button onclick="toggleMenu()" class="buttonContainer">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </button>
+      </div>
       <nav class="headerNav hide">
         <ul>
           <li><a href="chamberHome.html">Home</a></li>
@@ -29,27 +32,30 @@
           <li><a href="join.html">Join Us</a></li>
         </ul>
       </nav>
-      <picture class="heroImg">
-        <source
+      <div class="heroSection">
+
+        <picture class="heroImg">
+          <source
           media="(max-width: 200px )"
           srcset="images/CityImg/heroImg200.jpg"
-        />
-        <source
+          />
+          <source
           media="(max-width: 500px )"
           srcset="images/CityImg/heroImg500.jpg"
-        />
-        <source
+          />
+          <source
           media="(max-width: 800px )"
           srcset="images/CityImg/heroImg800.jpg"
-        />
-        <img src="images/CityImg/heroImg.jpg" alt="homeHeroImg" />
-      </picture>
-      <div class="pageTag">
-        <p>Welcome To Rupert</p>
-        <label for=""><input type="button" value="Join Us" /></label>
+          />
+          <img src="images/CityImg/heroImg.jpg" alt="homeHeroImg" />
+        </picture>
+        <div class="pageTag">
+          <h1>Welcome To Rupert</h1>
+          <label for=""><input type="button" value="Join Us" /></label>
+        </div>
       </div>
     </header>
-    <main>
+    <main class="clearfix">
       <section class="aboutSection">
         <h2>About Rupert</h2>
         <p>

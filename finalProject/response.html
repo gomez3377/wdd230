@@ -13,7 +13,9 @@
 </head>
 <body>
     <header>
-      <img src="images/commerceLogoSmall.png" alt="logo" />
+      <div class="responsiveHeader">
+
+        <img src="images/commerceLogoSmall.png" alt="logo" />
         <h1>Rupert Chamber of Commerce</h1>
         <button onclick="toggleMenu()" class="buttonContainer">
           
@@ -21,6 +23,7 @@
           <span class="middle"></span>
           <span class="bottom"></span>
         </button>
+      </div>
         <nav class="headerNav hide">
           <ul>
             <li><a href="chamberHome.html">Home</a></li>
@@ -30,21 +33,24 @@
             <li><a href="join.html">Join Us</a></li>
           </ul>
         </nav>
-        <picture class="heroImg">
-          <source
+        <div class="heroSection">
+
+          <picture class="heroImg">
+            <source
             media="(max-width: 200px )"
             srcset="images/ResponseImg/heroImg200.jpg"
-          />
-          <source
+            />
+            <source
             media="(max-width: 500px )"
             srcset="images/ResponseImg/heroImg500.jpg"
-          />
-          <source
+            />
+            <source
             media="(max-width: 800px )"
             srcset="images/ResponseImg/heroImg800.jpg"
-          />
-          <img src="images/ResponseImg/heroImg.jpg" alt="homeHeroImg" />
-        </picture>
+            />
+            <img src="images/ResponseImg/heroImg.jpg" alt="homeHeroImg" />
+          </picture>
+        </div>
     </header>
     <main><h2>Thank You!</h2>
       <section id="fourmResponse">

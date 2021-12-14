@@ -73,17 +73,13 @@ const dayNames = [
 
 function toggleMenu() {
     
-    document.querySelector("ul").classList.toggle("hide");
+    document.querySelector(".headerNav").classList.toggle("hide");
     document.querySelector(".top").classList.toggle("active");
     document.querySelector(".middle").classList.toggle("active");
     document.querySelector(".bottom").classList.toggle("active");
 }
 
     
-
-
-
-
 
 
 
