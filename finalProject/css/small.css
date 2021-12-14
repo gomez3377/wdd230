@@ -1,140 +1,132 @@
 body {
-    background-color: #ebebeb;
-    font-family: "Public Sans", sans-serif;
-    color: #3d3d3d;
+  background-color: #ebebeb;
+  font-family: "Public Sans", sans-serif;
+  color: #3d3d3d;
 }
 
-
-h1, h2 , h3 {
-    font-family: "Playfair Display" , serif;
-    color: #278f78;
-    letter-spacing: 0.1rem;
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  color: #278f78;
+  letter-spacing: 0.1rem;
 }
 
 header {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    margin: auto;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  margin: auto;
 }
 
-.responsiveHeader{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    justify-items: center;
-    align-items: center;
-
+.responsiveHeader {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
 }
 footer {
-    background-color: #3d3d3d;
-    color: #ebebeb;
+  background-color: #3d3d3d;
+  color: #ebebeb;
 }
 main {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 .headerNav {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
- nav.hide {
-    display: none;
+nav.hide {
+  display: none;
 }
 
 .headerNav ul {
-    list-style: none;
+  list-style: none;
 }
 
 .headerNav ul li {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 40%;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 40%;
 }
 .headerNav ul li a {
-    color: #3d3d3d;
-} 
-
-picture img {
-    width: 100%;
+  color: #3d3d3d;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .buttonContainer {
-    position: relative;
-    cursor: pointer;
-    height: 27px;
-    width: 35px;
-    background: none;
-    border: none;
-    z-index: 2;
-  }
-  
-  
-  .buttonContainer span {
-    background: #278f78;
-    border: none;
-    border-radius: 15rem;
-    height: 4px;
-    width: 100%;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    transition: 200ms ease-in;
-  }
-  .top.active {
-    transform: translateY(11px) translateX(0) rotate(45deg);
-    transition:  200ms ease-in;
-  
-  }
-  .middle.active  {
-    opacity: 0;
-    transition:  200ms ease-in;
-  }
-  .bottom.active {
-    transform: translateY(-11px) translateX(0) rotate(-45deg);
-    transition:  200ms ease-in;
-  }
-  .buttonContainer span:nth-of-type(2){
-    top: 11px;
-  }
-  .buttonContainer span:nth-of-type(3){
-    top: 22px;
-  }
-.heroSection {
-    position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    height: 25vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: 27px;
+  width: 35px;
+  background: none;
+  border: none;
+  z-index: 2;
 }
-  .heroImg {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: -1;
-    }
-  .heroImg img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      margin: 0;
-      padding: 0;
-  }
-  .pageTag h1 {
-      text-align: center;
-      color: #ebebeb;
-      
-  }
-  /*----- Clearfix: Force an Element not to collapse -----*/
+
+.buttonContainer span {
+  background: #278f78;
+  border: none;
+  border-radius: 15rem;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  transition: 200ms ease-in;
+}
+.top.active {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  transition: 200ms ease-in;
+}
+.middle.active {
+  opacity: 0;
+  transition: 200ms ease-in;
+}
+.bottom.active {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  transition: 200ms ease-in;
+}
+.buttonContainer span:nth-of-type(2) {
+  top: 11px;
+}
+.buttonContainer span:nth-of-type(3) {
+  top: 22px;
+}
+.heroSection {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroImg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.heroImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+.pageTag h1 {
+  text-align: center;
+  color: #ebebeb;
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+  content: "";
+  display: table;
+  clear: both;
+}
