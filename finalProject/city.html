@@ -40,14 +40,11 @@
           srcset="images/CityImg/heroImg200.jpg"
           />
           <source
-          media="(max-width: 500px )"
+          media="(max-width: 800px )"
           srcset="images/CityImg/heroImg500.jpg"
           />
-          <source
-          media="(max-width: 800px )"
-          srcset="images/CityImg/heroImg800.jpg"
-          />
-          <img src="images/CityImg/heroImg.jpg" alt="homeHeroImg" />
+         
+          <img src="images/CityImg/heroImg500.jpg" alt="homeHeroImg" />
         </picture>
         <div class="pageTag">
           <h1>Welcome To Rupert</h1>
@@ -63,16 +60,6 @@
           largest city.
         </p>
         <p>
-          Rupert is strategically located 45 miles from Twin Falls, Idaho, 160
-          miles from Boise, Idaho and 180 miles from Salt Lake City, Utah. The
-          City is easily accessible to Interstate 84 which is only 4.5 miles
-          from the city center; the interstate road system is accessed via State
-          Highway 24 and State Highway 25. These two highways provide two
-          separate access points to I-84. All of the City’s commercial and
-          industrial areas are therefore easily accessed by this
-          well-established road system.
-        </p>
-        <p>
           The center of Rupert’s Historic Business District is listed on the
           National Register of Historic places and surrounds a beautiful town
           square, also on the historic register. The Historic Rupert Square is
@@ -82,40 +69,61 @@
       </section>
       <section class="localEvents">
         <h2>Local Events</h2>
-        <div class="eventCards">
-          <h3>A Musical Christmas</h3>
-          <p>
-            A non-denominational tribute to Jesus Christ, Handel’s “Messiah”
-            singalong directed by Craig Jessop — best known for his tenure
-            directing the Tabernacle Choir at Temple Square — will be held at 7:30 p.m.
-            Dec. 17 at the Wilson Theatre.
-          </p>
-          <img src="images/event1Img200.jpg" alt="eventPhoto" />
-        </div>
-        <div class="eventCards">
-          <h3>New Years Beet Drop</h3>
-          <p>
-            Come to the Rupert Town Square on December 31, 2021 for this year's
-            Beet Drop!. This year Royal Bliss will ringing 2022 downtown at the
-            Rupert Square. This is a free show and all ages are welcome.
-          </p>
-          <img src="images/event2Img200.jpg" alt="eventPhoto" />
-        </div>
-        <div class="eventCards">
-          <h3>Sister Act The Musical</h3>
-          <p>
-            The Historic Wilson Theatre proudly presents Sister Act The Musical.
-            Based off the 1992 movie “Sister Act” come and be transported into
-            the 70’s. Sister Act will make you laugh, cry and you will want to
-            dance the night away .
-          </p>
-          <img src="images/event3Img200.jpg" alt="eventPhoto" />
+        <div class="carousel" data-carousel>
+          <ul class="carousel" data-slides>
+            <li class="eventCards" data-active>
+              <h3>A Musical Christmas</h3>
+              <div class="eventCardContent">
+                <p>
+                  A non-denominational tribute to Jesus Christ, Handel’s
+                  “Messiah” singalong directed by Craig Jessop — best known for
+                  his tenure directing the Mormon Tabernacle Choir — will be
+                  held at 7:30 p.m. Dec. 17 at the Wilson Theatre.
+                </p>
+                <img src="images/event1Img200.jpg" alt="eventPhoto" />
+              </div>
+            </li>
+            <li class="eventCards">
+              <h3>New Years Beet Drop</h3>
+              <div class="eventCardContent">
+                <p>
+                  Come to the Rupert Town Square on December 31, 2021 for this
+                  year's Beet Drop!. This year Royal Bliss will ringing 2022
+                  downtown at the Rupert Square. This is a free show and all
+                  ages are welcome.
+                </p>
+                <img src="images/event2Img200.jpg" alt="eventPhoto" />
+              </div>
+            </li>
+            <li class="eventCards">
+              <h3>Sister Act The Musical</h3>
+              <div class="eventCardContent">
+                <p>
+                  The Historic Wilson Theatre proudly presents Sister Act The
+                  Musical. Based off the 1992 movie “Sister Act” come and be
+                  transported into the 70’s. Sister Act will make you laugh, cry
+                  and you will want to dance the night away .
+                </p>
+                <img src="images/event3Img200.jpg" alt="eventPhoto" />
+              </div>
+            </li>
+          </ul>
+          <div class="carousel-button-container">
+            <button class="carousel-button prev" data-carousel-button="prev">
+              &#8678;
+            </button>
+            <button class="carousel-button next" data-carousel-button="next">
+              &#8680;
+            </button>
+          </div>
         </div>
       </section>
       <section class="historicalFact">
+        
         <h2>Historical Fact</h2>
-        <p>
-          Rupert became a village in 1904. It was originally called Wellfirst
+        <div class="sectionContent">
+          <p>
+            Rupert became a village in 1904. It was originally called Wellfirst
           because it had the only well within miles and people traveled long
           distances to get their supply of water from the well, which was
           located in the middle of the Historic Rupert Square Park. An employee
@@ -136,23 +144,26 @@
           <source
             media="(max-width: 500px )"
             srcset="images/CityImg/historicalFactImg500.jpg"
-          />
-          <source
+            />
+            <source
             media="(max-width: 800px )"
             srcset="images/CityImg/historicalFactImg800.jpg"
-          />
-        <img src="images/CityImg/historicalFactImg.png" alt="historicalImg">
-        </picture>
-      </section>
-      <section>
-        <h2>Welcome to Christmas City, USA</h2>
+            />
+            <img src="images/CityImg/historicalFactImg.png" alt="historicalImg">
+          </picture>
+        </div>
+    </section>
+    <section>
+      <h2>Welcome to Christmas City, USA</h2>
+      <div class="sectionContent">
+
         <picture class="cityHighlightImg">
           <source
-            media="(max-width: 200px )"
+          media="(max-width: 200px )"
             srcset="images/CityImg/cityHighlightImg200.jpg"
           />
           <source
-            media="(max-width: 500px )"
+          media="(max-width: 500px )"
             srcset="images/CityImg/cityHighlightImg500.jpg"
           />
           <source
@@ -170,21 +181,26 @@
           around. Not only does it get all dressed up in lights, but community
           events and attractions are abundant during this time of year.
         </p>
+      </div>
       </section>
     </main>
     <footer>
-      <h2>Contact Info</h2>
-      <p>Phone Number: 208-679-4793</p>
-      <p>Fax Number: 208-679-4794</p>
-      <p>Street Address: 1177 7th Street Heyburn, ID 83336</p>
-      <div class="socialContainer">
-        <img src="images/facebook.png" alt="facebook" />
-        <img src="images/instagram.png" alt="instagram" />
-        <img src="images/twitter.png" alt="twitter" />
-      </div>
-      <div class="footerBar"><a href="attributions.html">Attributions Page</a></div>
+      <section class="contactInfo">
+
+        <h2>Contact Info</h2>
+        <p>Phone Number: 208-679-4793</p>
+        <p>Fax Number: 208-679-4794</p>
+        <p>Street Address: 1177 7th Street Heyburn, ID 83336</p>
+        <div class="socialContainer">
+          <img src="images/facebook.png" alt="facebook" />
+          <img src="images/instagram.png" alt="instagram" />
+          <img src="images/twitter.png" alt="twitter" />
+        </div>
+      </section>
+        <div class="footerBar"><a href="attributions.html">Attributions Page</a></div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/chamber.js"></script>
+    <script src="js/town.js"></script>
   </body>
 </html>

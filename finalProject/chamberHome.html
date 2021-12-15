@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rupert Chamber of Commerce</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
   </head>
   <body>
     <header>
       <div class="responsiveHeader">
-        <img src="images/commerceLogoSmall.png" alt="logo">
+        <img src="images/commerceLogoSmall.png" alt="logo" />
         <h1>Rupert Chamber of Commerce</h1>
         <button onclick="toggleMenu()" class="buttonContainer">
           <span class="top"></span>
@@ -31,24 +31,23 @@
         </ul>
       </nav>
       <div class="heroSection">
-
         <picture class="heroImg">
           <source
-          media="(max-width: 200px )"
-          srcset="images/HomePageImg/heroImg200.jpg"
+            media="(max-width: 200px )"
+            srcset="images/HomePageImg/heroImg200.jpg"
           />
           <source
-          media="(max-width: 500px )"
-          srcset="images/HomePageImg/heroImg500.jpg"
+            media="(max-width: 500px )"
+            srcset="images/HomePageImg/heroImg500.jpg"
           />
           <source
-          media="(max-width: 800px )"
-          srcset="images/HomePageImg/heroImg800.jpg"
+            media="(max-width: 800px )"
+            srcset="images/HomePageImg/heroImg800.jpg"
           />
           <img src="images/HomePageImg/heroImg.jpg" alt="homeHeroImg" />
         </picture>
         <div class="pageTag">
-          <label for=""><input type="button" value="Grow With Us" /></label>
+          <button><a href="join.html">Grow With Us!</a></button>
         </div>
       </div>
     </header>
@@ -67,10 +66,18 @@
         <img src="" alt="" />
       </section>
 
-      <section>
+      <section class="localBusinesses">
         <h2>Local Business</h2>
-        <div class="localBusinesses">
-
+        <div class="carousel" data-carousel>
+          <ul class="business-carousel-slides" data-slides></ul>
+          <div class="carousel-button-container">
+            <button class="carousel-button prev" data-carousel-button="prev">
+              &#8678;
+            </button>
+            <button class="carousel-button next" data-carousel-button="next">
+              &#8680;
+            </button>
+          </div>
         </div>
       </section>
 
@@ -91,9 +98,11 @@
         </section>
         <section class="threeDayForecast">
           <div class="threeDayForcastContainers">
-            <h3 class="forcastDay1">_</h3>
-            <p class="forecastTemp1High">_</p>
-            <p class="forecastTemp1Low">_</p>
+            <div class="forcastTextContainer">
+              <h3 class="forcastDay1">_</h3>
+              <p class="forecastTemp1Weather">_</p>
+              <p class="forecastTemp1High">_</p>
+            </div>
             <img
               src="https://via.placeholder.com/50X50/274b8f/FFFFFF.png?text=Placeholder"
               alt="day1"
@@ -101,9 +110,11 @@
             />
           </div>
           <div class="threeDayForcastContainers">
-            <h3 class="forcastDay2">_</h3>
-            <p class="forecastTemp2High">_</p>
-            <p class="forecastTemp2Low">_</p>
+            <div class="forcastTextContainer">
+              <h3 class="forcastDay2">_</h3>
+              <p class="forecastTemp2Weather">_</p>
+              <p class="forecastTemp2High">_</p>
+            </div>
             <img
               src="https://via.placeholder.com/50X50/274b8f/FFFFFF.png?text=Placeholder"
               alt="day2"
@@ -111,9 +122,11 @@
             />
           </div>
           <div class="threeDayForcastContainers">
-            <h3 class="forcastDay3">_</h3>
-            <p class="forecastTemp3High">_</p>
-            <p class="forecastTemp3Low">_</p>
+            <div class="forcastTextContainer">
+              <h3 class="forcastDay3">_</h3>
+              <p class="forecastTemp3Weather">_</p>
+              <p class="forecastTemp3High">_</p>
+            </div>
             <img
               src="https://via.placeholder.com/50X50/274b8f/FFFFFF.png?text=Placeholder"
               alt="day3"
@@ -125,67 +138,105 @@
 
       <section class="localEvents">
         <h2>Local Events</h2>
-        <div class="eventCards">
-          <h3>A Musical Christmas</h3>
-          <p>
-            A non-denominational tribute to Jesus Christ, Handel’s “Messiah”
-            singalong directed by Craig Jessop — best known for his tenure
-            directing the Mormon Tabernacle Choir — will be held at 7:30 p.m.
-            Dec. 17 at the Wilson Theatre.
-          </p>
-          <img src="images/event1Img200.jpg" alt="eventPhoto" />
-        </div>
-        <div class="eventCards">
-          <h3>New Years Beet Drop</h3>
-          <p>
-            Come to the Rupert Town Square on December 31, 2021 for this year's
-            Beet Drop!. This year Royal Bliss will ringing 2022 downtown at the
-            Rupert Square. This is a free show and all ages are welcome.
-          </p>
-          <img src="images/event2Img200.jpg" alt="eventPhoto" />
-        </div>
-        <div class="eventCards">
-          <h3>Sister Act The Musical</h3>
-          <p>
-            The Historic Wilson Theatre proudly presents Sister Act The Musical.
-            Based off the 1992 movie “Sister Act” come and be transported into
-            the 70’s. Sister Act will make you laugh, cry and you will want to
-            dance the night away .
-          </p>
-          <img src="images/event3Img200.jpg" alt="eventPhoto" />
+        <div class="carousel" data-carousel>
+          <ul class="carousel" data-slides>
+            <li class="eventCards" data-active>
+              <h3>A Musical Christmas</h3>
+              <div class="eventCardContent">
+                <p>
+                  A non-denominational tribute to Jesus Christ, Handel’s
+                  “Messiah” singalong directed by Craig Jessop — best known for
+                  his tenure directing the Mormon Tabernacle Choir — will be
+                  held at 7:30 p.m. Dec. 17 at the Wilson Theatre.
+                </p>
+                <img src="images/event1Img200.jpg" alt="eventPhoto" />
+              </div>
+            </li>
+            <li class="eventCards">
+              <h3>New Years Beet Drop</h3>
+              <div class="eventCardContent">
+                <p>
+                  Come to the Rupert Town Square on December 31, 2021 for this
+                  year's Beet Drop!. This year Royal Bliss will ringing 2022
+                  downtown at the Rupert Square. This is a free show and all
+                  ages are welcome.
+                </p>
+                <img src="images/event2Img200.jpg" alt="eventPhoto" />
+              </div>
+            </li>
+            <li class="eventCards">
+              <h3>Sister Act The Musical</h3>
+              <div class="eventCardContent">
+                <p>
+                  The Historic Wilson Theatre proudly presents Sister Act The
+                  Musical. Based off the 1992 movie “Sister Act” come and be
+                  transported into the 70’s. Sister Act will make you laugh, cry
+                  and you will want to dance the night away .
+                </p>
+                <img src="images/event3Img200.jpg" alt="eventPhoto" />
+              </div>
+            </li>
+          </ul>
+          <div class="carousel-button-container">
+            <button class="carousel-button prev" data-carousel-button="prev">
+              &#8678;
+            </button>
+            <button class="carousel-button next" data-carousel-button="next">
+              &#8680;
+            </button>
+          </div>
         </div>
       </section>
 
       <section class="Join Us">
         <h2>Join Us</h2>
-        <p>If you aren't already a member of the Rupert Chamber of Commerce, here are a few reasons why you might wnat to join...</p>
-        <ul>
-          <li>Build relationships, network, and make friends with other businesses professionals</li>
-          <li>Be promoted by our visitor cente</li>
-          <li>List your business on our website directory</li>
-          <li>Get listed in the local Visitors Guide</li>
-          <li>Get first priority on booth registration at Chamber-run events</li>
-          <li>Monthly Chamber Luncheons</li>
-          <li>Lots of opportunities to advertise and promote your business to other members</li>
-          <li>Lots of opportunities to advertise and promote your business to other members</li>
-          <li>It's fun!</li>
-        </ul>
-        <label for=""><input type="button" value="Join Us" /></label>
-        <img src="" alt="" />
+        <div class="sectionContent">
+          <p>
+            If you aren't already a member of the Rupert Chamber of Commerce,
+            here are a few reasons why you might wnat to join...
+          </p>
+          <ul>
+            <li>
+              Build relationships, network, and make friends with other
+              businesses professionals
+            </li>
+            <li>Be promoted by our visitor cente</li>
+            <li>List your business on our website directory</li>
+            <li>Get listed in the local Visitors Guide</li>
+            <li>
+              Get first priority on booth registration at Chamber-run events
+            </li>
+            <li>Monthly Chamber Luncheons</li>
+            <li>
+              Lots of opportunities to advertise and promote your business to
+              other members
+            </li>
+            <li>
+              Lots of opportunities to advertise and promote your business to
+              other members
+            </li>
+            <li>It's fun!</li>
+          </ul>
+          <label for=""><input type="button" value="Join Us" /></label>
+          <img src="" alt="" />
+        </div>
       </section>
     </main>
     <footer>
-      <h2>Contact Info</h2>
-      <p>Phone Number: 208-679-4793</p>
-      <p>Fax Number: 208-679-4794</p>
-      <p>Street Address: 1177 7th Street
-        Heyburn, ID 83336</p>
-      <div class="socialContainer">
-        <img src="images/facebook.png" alt="facebook" />
-        <img src="images/instagram.png" alt="instagram" />
-        <img src="images/twitter.png" alt="twitter" />
+      <section class="contactInfo">
+        <h2>Contact Info</h2>
+        <p>Phone Number: 208-679-4793</p>
+        <p>Fax Number: 208-679-4794</p>
+        <p>Street Address: 1177 7th Street Heyburn, ID 83336</p>
+        <div class="socialContainer">
+          <img src="images/facebook.png" alt="facebook" />
+          <img src="images/instagram.png" alt="instagram" />
+          <img src="images/twitter.png" alt="twitter" />
+        </div>
+      </section>
+      <div class="footerBar">
+        <a href="attributions.html">Attributions Page</a>
       </div>
-      <div class="footerBar"><a href="attributions.html">Attributions Page</a></div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/chamber.js"></script>

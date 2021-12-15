@@ -81,36 +81,43 @@ function kelvinToFahrenheit (K) {
   fetch(forcastapiURL)
   .then((response)=> response.json())
   .then((jsObject)=> {
-      let fiveDayArray = []; 
-      const fiveDayTempArray=[];
-      const fiveDayWeatherIcons=[];
+    console.log(jsObject)
+      let threeDayArray = []; 
+      const threeDayTempArray=[];
+      const threeDayWeatherIcons=[];
+      const threeDayWeather=[];
       for (i = 0; i < 40; i++){
           if (jsObject.list[i].dt_txt.includes('18:00:00')) {
-            fiveDayTempArray.push(kelvinToFahrenheit(jsObject.list[i].main.temp) + "\u00B0F");
-            fiveDayWeatherIcons.push('https://openweathermap.org/img/w/'+ jsObject.list[i].weather[0].icon + ".png");
+            threeDayTempArray.push(kelvinToFahrenheit(jsObject.list[i].main.temp) + "\u00B0F");
+            threeDayWeather.push(jsObject.list[i].weather[0].main);
+            threeDayWeatherIcons.push('https://openweathermap.org/img/w/'+ jsObject.list[i].weather[0].icon + ".png");
           }
       }
-      for (i = 1; i <= 2; i++) {
-        fiveDayArray.push(abbreviatedDayNames[(currentDate.getDay()+ i) % 7]);
+      for (i = 1; i <= 3; i++) {
+        threeDayArray.push(abbreviatedDayNames[(currentDate.getDay()+ i) % 7]);
         
       }
-      
-      document.querySelector(".forcastDay1").textContent = fiveDayArray[0]; 
-      document.querySelector(".forecastTemp1High").textContent = fiveDayTempArray[0]; 
-      document.querySelector(".forcastIcon1").setAttribute ('src' ,fiveDayWeatherIcons[0]); 
-      
-      
-      
-      document.querySelector(".forcastDay2").textContent = fiveDayArray[1]; 
-      document.querySelector(".forecastTemp2High").textContent = fiveDayTempArray[1]; 
-      document.querySelector(".forcastIcon2").setAttribute ('src' , fiveDayWeatherIcons[1]); 
+
+      document.querySelector(".forcastDay1").textContent = threeDayArray[0]; 
+      document.querySelector(".forecastTemp1Weather").textContent = threeDayWeather[0]; 
+      document.querySelector(".forecastTemp1High").textContent = threeDayTempArray[0]; 
+      document.querySelector(".forcastIcon1").setAttribute ('src' ,threeDayWeatherIcons[0]); 
       
       
       
-      document.querySelector(".forcastDay3").textContent = fiveDayArray[2]; 
-      document.querySelector(".forecastTemp3High").textContent = fiveDayTempArray[2]; 
-      document.querySelector(".forcastIcon3").setAttribute ('src' ,fiveDayWeatherIcons[2]); 
+      document.querySelector(".forcastDay2").textContent = threeDayArray[1]; 
+      document.querySelector(".forecastTemp2Weather").textContent = threeDayWeather[1]; 
+      document.querySelector(".forecastTemp2High").textContent = threeDayTempArray[1]; 
+      document.querySelector(".forcastIcon2").setAttribute ('src' , threeDayWeatherIcons[1]); 
       
+      
+      
+      
+      document.querySelector(".forcastDay3").textContent = threeDayArray[2]; 
+      document.querySelector(".forecastTemp3Weather").textContent = threeDayWeather[2]; 
+      document.querySelector(".forecastTemp3High").textContent = threeDayTempArray[2]; 
+ 
+      document.querySelector(".forcastIcon3").setAttribute ('src' ,threeDayWeatherIcons[2]); 
   });
   
   //-----------------------------------Getting the Wind Chill Value--------------------------------------
@@ -140,8 +147,16 @@ fetch(requestURL)
     console.table(jsonObject);
     const business = jsonObject;
 
-    let businessCardsOne = document.createElement('section')
+    let businessCardsOne = document.createElement('li');
+      businessCardsOne.className = 'businessCards';
+      businessCardsOne.setAttribute("data-active","");
     let businessNameOne = document.createElement('h3');
+    let businessCardContentOne = document.createElement('div');
+    businessCardContentOne.className = 'businessCardContent';
+    let businessCardTextContainerOne = document.createElement('div');
+    businessCardTextContainerOne.className = 'businesscardTextContainer';
+    let businessCardImgContainerOne = document.createElement('div');
+    businessCardImgContainerOne.className =  'businesscardImgContainer';
     let businessOnwerOne = document.createElement('p');
     let streetAddressOne = document.createElement('p');
     let cityAndStateOne = document.createElement('p');
@@ -149,17 +164,31 @@ fetch(requestURL)
     let websiteOne = document.createElement('p');
     let businessImgOne = document.createElement('img');
     
-    let businessCardsTwo = document.createElement('section')
+    let businessCardsTwo = document.createElement('li');
+      businessCardsTwo.className = 'businessCards';
     let businessNameTwo = document.createElement('h3');
+    let businessCardContentTwo = document.createElement('div');
+    businessCardContentTwo.className = 'businessCardContent';
+    let businessCardTextContainerTwo = document.createElement('div');
+    businessCardTextContainerTwo.className = 'businesscardTextContainer';
+    let businessCardImgContainerTwo = document.createElement('div');
+    businessCardImgContainerTwo.className =  'businesscardImgContainer';
     let businessOnwerTwo = document.createElement('p');
     let streetAddressTwo = document.createElement('p');
     let cityAndStateTwo = document.createElement('p');
     let phoneNumberTwo = document.createElement('p');
     let websiteTwo = document.createElement('p');
     let businessImgTwo = document.createElement('img');
-   
-    let businessCardsThree = document.createElement('section')
+    
+    let businessCardsThree = document.createElement('li');
+      businessCardsThree.className = 'businessCards';
     let businessNameThree = document.createElement('h3');
+    let businessCardContentThree = document.createElement('div');
+    businessCardContentThree.className = 'businessCardContent';
+    let businessCardTextContainerThree = document.createElement('div');
+    businessCardTextContainerThree.className = 'businesscardTextContainer';
+    let businessCardImgContainerThree = document.createElement('div');
+    businessCardImgContainerThree.className =  'businesscardImgContainer';
     let businessOnwerThree = document.createElement('p');
     let streetAddressThree = document.createElement('p');
     let cityAndStateThree = document.createElement('p');
@@ -168,7 +197,7 @@ fetch(requestURL)
     let businessImgThree = document.createElement('img');
 
         
-            businessNameOne.textContent = ":" + business[2].name;
+            businessNameOne.textContent = business[2].name;
             businessOnwerOne.textContent = "Owner: " + business[2].owner;
             streetAddressOne.textContent = "Address: " + business[2].address;
             cityAndStateOne.textContent = business[2].cityAndState;
@@ -177,14 +206,17 @@ fetch(requestURL)
             businessImgOne.src = business[2].businessPhoto;
             
             businessCardsOne.appendChild(businessNameOne);
-            businessCardsOne.appendChild(businessOnwerOne);
-            businessCardsOne.appendChild(streetAddressOne);
-            businessCardsOne.appendChild(cityAndStateOne);
-            businessCardsOne.appendChild(phoneNumberOne);
-            businessCardsOne.appendChild(websiteOne);
-            businessCardsOne.appendChild(businessImgOne);
+            businessCardsOne.appendChild(businessCardContentOne);
+            businessCardContentOne.appendChild(businessCardTextContainerOne);
+            businessCardContentOne.appendChild(businessCardImgContainerOne);
+            businessCardTextContainerOne.appendChild(businessOnwerOne);
+            businessCardTextContainerOne.appendChild(streetAddressOne);
+            businessCardTextContainerOne.appendChild(cityAndStateOne);
+            businessCardTextContainerOne.appendChild(phoneNumberOne);
+            businessCardTextContainerOne.appendChild(websiteOne);
+            businessCardImgContainerOne.appendChild(businessImgOne);
             
-            businessNameTwo.textContent = ":" + business[4].name;
+            businessNameTwo.textContent = business[4].name;
             businessOnwerTwo.textContent = "Owner: " + business[4].owner;
             streetAddressTwo.textContent = "Address: " + business[4].address;
             cityAndStateTwo.textContent = business[4].cityAndState;
@@ -193,14 +225,17 @@ fetch(requestURL)
             businessImgTwo.src = business[4].businessPhoto;
             
             businessCardsTwo.appendChild(businessNameTwo);
-            businessCardsTwo.appendChild(businessOnwerTwo);
-            businessCardsTwo.appendChild(streetAddressTwo);
-            businessCardsTwo.appendChild(cityAndStateTwo);
-            businessCardsTwo.appendChild(phoneNumberTwo);
-            businessCardsTwo.appendChild(websiteTwo);
-            businessCardsTwo.appendChild(businessImgTwo);
+            businessCardsTwo.appendChild(businessCardContentTwo);
+            businessCardContentTwo.appendChild(businessCardTextContainerTwo);
+            businessCardContentTwo.appendChild(businessCardImgContainerTwo);
+            businessCardTextContainerTwo.appendChild(businessOnwerTwo);
+            businessCardTextContainerTwo.appendChild(streetAddressTwo);
+            businessCardTextContainerTwo.appendChild(cityAndStateTwo);
+            businessCardTextContainerTwo.appendChild(phoneNumberTwo);
+            businessCardTextContainerTwo.appendChild(websiteTwo);
+            businessCardImgContainerTwo.appendChild(businessImgTwo);
             
-            businessNameThree.textContent = ":" + business[6].name;
+            businessNameThree.textContent = business[6].name;
             businessOnwerThree.textContent = "Owner: " + business[6].owner;
             streetAddressThree.textContent = "Address: " + business[6].address;
             cityAndStateThree.textContent = business[6].cityAndState;
@@ -209,18 +244,43 @@ fetch(requestURL)
             businessImgThree.src = business[6].businessPhoto;
             
             businessCardsThree.appendChild(businessNameThree);
-            businessCardsThree.appendChild(businessOnwerThree);
-            businessCardsThree.appendChild(streetAddressThree);
-            businessCardsThree.appendChild(cityAndStateThree);
-            businessCardsThree.appendChild(phoneNumberThree);
-            businessCardsThree.appendChild(websiteThree);
-            businessCardsThree.appendChild(businessImgThree);
+            businessCardsThree.appendChild(businessCardContentThree);
+            businessCardContentThree.appendChild(businessCardTextContainerThree);
+            businessCardContentThree.appendChild(businessCardImgContainerThree);
+            businessCardTextContainerThree.appendChild(businessOnwerThree);
+            businessCardTextContainerThree.appendChild(streetAddressThree);
+            businessCardTextContainerThree.appendChild(cityAndStateThree);
+            businessCardTextContainerThree.appendChild(phoneNumberThree);
+            businessCardTextContainerThree.appendChild(websiteThree);
+            businessCardImgContainerThree.appendChild(businessImgThree);
             
-            document.querySelector('div.localBusinesses').appendChild(businessCardsOne);
-            document.querySelector('div.localBusinesses').appendChild(businessCardsTwo);
-            document.querySelector('div.localBusinesses').appendChild(businessCardsThree);
+
+
+
+            document.querySelector('.business-carousel-slides').appendChild(businessCardsOne);
+            document.querySelector('.business-carousel-slides').appendChild(businessCardsTwo);
+            document.querySelector('.business-carousel-slides').appendChild(businessCardsThree);
             
         
     
     
+});
+
+const buttons = document.querySelectorAll("[data-carousel-button]");
+
+buttons.forEach(button => {
+  button.addEventListener("click",() => {
+    const offset =button.dataset.carouselButton === "next" ? 1: -1
+    const slides = button
+    .closest("[data-carousel]")
+    .querySelector("[data-slides]")
+
+  const activeSlide = slides.querySelector("[data-active]")
+  let newIndex = [...slides.children].indexOf(activeSlide) + offset
+  if (newIndex < 0) newIndex = slides.children.length -1
+  if (newIndex >= slides.children.length) newIndex = 0
+
+  slides.children[newIndex].dataset.active = true
+  delete activeSlide.dataset.active
+  })
 });

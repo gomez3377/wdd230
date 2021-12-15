@@ -198,7 +198,7 @@ fetch(forcastapiURL)
           fiveDayWeatherIcons.push( 'https://openweathermap.org/img/w/'+ jsObject.list[i].weather[0].icon + '.png');
         }
     }
-    console.log(fiveDayWeatherIcons);
+    console.log(fiveDayTempArray);
     for (i = 1; i <= 5; i++) {
       fiveDayArray.push(abbreviatedDayNames[(currentDate.getDay()+ i) % 7]);
       
