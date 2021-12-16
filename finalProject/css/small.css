@@ -343,3 +343,11 @@ h4 {
   width: 5rem;
   border-radius: 1rem;
 }
+
+.footerBar {
+  background-color: #ebebeb;
+  color: #278f78;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
