@@ -19,15 +19,18 @@ header {
   width: 100%;
   margin: auto;
 }
-.weatherDetails, .businesscardTextContainer, .eventCardContent p {
-	background: #274b8f;
-	color: #ebebeb;
-	padding: 1rem 2rem;
-	border-radius: 2rem;
+.weatherDetails,
+.businesscardTextContainer,
+.eventCardContent p {
+  background: #274b8f;
+  color: #ebebeb;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
 }
-.businesscardTextContainer p {
-	margin: 0;
-	word-break: break-all;
+.businesscardTextContainer p,
+.directory-text-container p {
+  margin: 0;
+  word-break: break-all;
 }
 .responsiveHeader {
   display: grid;
@@ -36,31 +39,35 @@ header {
   align-items: center;
 }
 .threeDayForcastContainers {
-	display: grid;
-	grid-template-columns: repeat(2,auto);
-	align-items: center;
-	gap: 5rem;
-	background: #274b8f;
-	color: #ebebeb;
-	border-radius: 2rem;
-	margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  gap: 5rem;
+  background: #274b8f;
+  color: #ebebeb;
+  border-radius: 2rem;
+  margin: 5rem auto;
 }
-.forcastDay1, .forcastDay2, .forcastDay3 {
-	color: #ebebeb;
+.forcastDay1,
+.forcastDay2,
+.forcastDay3,
+.membershipLevelCards h3 {
+  color: #ebebeb;
 }
 .forcastTextContainer p {
-	text-align: center;
+  text-align: center;
 }
 .threeDayForcastContainers img {
-	width: 70%;
-	justify-self: end;
-	padding: 0.5rem;
+  width: 70%;
+  justify-self: end;
+  padding: 0.5rem;
 }
 footer {
   background-color: #3d3d3d;
   color: #ebebeb;
 }
-main, .contactInfo {
+main,
+.contactInfo {
   max-width: 75%;
   margin: 0 auto;
 }
@@ -70,7 +77,7 @@ main, .contactInfo {
   align-items: center;
 }
 section {
-	margin: 5rem auto;
+  margin: 5rem auto;
 }
 p {
   line-height: 2em;
@@ -164,22 +171,25 @@ a {
 button {
   background-color: transparent;
   padding: 1rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
-main img {
-	border-style: none;
-	width: 100%;
-	object-fit: cover;
+main img,
+iframe {
+  border-style: none;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
 }
 .eventCardContent {
-	display: grid;
-	grid-template-rows: auto;
+  display: grid;
+  grid-template-rows: auto;
 }
-.eventCardContent img, .businesscardImgContainer img {
-	width: 10rem;
-	height: 10rem;
-	padding: 1rem;
+.eventCardContent img,
+.businesscardImgContainer img {
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem;
   object-fit: cover;
   justify-self: center;
 }
@@ -188,8 +198,8 @@ main img {
   padding: 1rem;
 }
 button a {
-	font-size: 2rem;
-	color: #ebebeb;
+  font-size: 2rem;
+  color: #ebebeb;
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -211,22 +221,23 @@ button a {
   margin-bottom: 1rem;
 }
 
-.eventCards, .businessCards {
+.eventCards,
+.businessCards {
   position: absolute;
   inset: 0;
   opacity: 0;
   transition: 100ms opacity ease-in-out;
   transition-delay: 100ms;
-
 }
-.eventCards[data-active], .businessCards[data-active] {
+.eventCards[data-active],
+.businessCards[data-active] {
   opacity: 1;
   z-index: 1;
   transition-delay: 0ms;
 }
 .carousel-button-container {
   display: grid;
-  grid-template-columns: repeat(2,auto);
+  grid-template-columns: repeat(2, auto);
 }
 .carousel-button {
   background: none;
@@ -238,36 +249,97 @@ button a {
   padding: 0;
 }
 .carousel-button:hover,
-.carousel-button:focus{
-  background-color:#274b8f;
+.carousel-button:focus {
+  background-color: #274b8f;
   color: #ebebeb;
-  
 }
-.membershipLevelCards, fieldset {
-	background-color: #274B8F;
-	color: #ebebed;
-	padding: 1rem 1.5rem;
-	border: none;
-	border-radius: 2rem;
-	margin: 5rem auto;
+.membershipLevelCards,
+fieldset {
+  background-color: #274b8f;
+  color: #ebebed;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  margin: 5rem auto;
 }
 
 .submitBtn {
-	background-color: #ebebeb;
-	border: none;
-	padding: 1rem;
-	border-radius: 2rem;
-	margin: 0 auto;
-	width: 75%;
+  background-color: #ebebeb;
+  border: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+  width: 75%;
 }
 .membershipLevelCards ul {
-	list-style: unset;
-	padding: 0.75rem;
-	line-height: 1.5rem;
+  list-style: unset;
+  padding: 0.75rem;
+  line-height: 1.5rem;
 }
 h4 {
-	text-align: center;
+  text-align: center;
 }
 .membershipLevelCards p {
-	text-align: center;
+  text-align: center;
+}
+.formImg {
+  display: none;
+}
+.forumTop {
+  display: block;
+  margin: 1rem;
+}
+
+.forumTop input,
+.forumTop textarea {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1.75rem;
+}
+
+.forumTop input:required {
+  background-color: rgba(255, 65, 65, 0.5);
+  color: #ebebeb;
+}
+.forumTop input:required:valid {
+  background-color: rgba(65, 255, 65, 0.5);
+  color: #ebebeb;
+}
+.socialContainer > img {
+  width: 4rem;
+  margin: 2rem 0;
+}
+.contact-info-text-container {
+  background-color: #274b8f;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  color: #ebebeb;
+}
+.contact-info-in-contact-page {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 3rem;
+}
+.boardofDirectors ul {
+  padding: 0;
+}
+.boardofDirectors ul li {
+  margin: 1rem 0;
+}
+
+.directoryButton img {
+  border-radius: 0;
+}
+.localBusinesses.grid li {
+  background: #274b8f;
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  color: #ebebeb;
+  margin: 5rem 0;
+}
+.localBusinesses > li > img {
+  width: 5rem;
+  border-radius: 1rem;
 }

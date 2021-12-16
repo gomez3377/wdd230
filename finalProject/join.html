@@ -50,47 +50,37 @@
             />
             <img src="images/JoinImg/heroImg.jpg" alt="homeHeroImg" />
           </picture>
-        </div>
-        <div class="pageTag">
-       <h1>Join Us</h1>
+          <div class="pageTag">
+         <h1>Join Us</h1>
+          </div>
         </div>
     </header>
     <main>
       <section class="benefitsToJoin">
-        <h2>Benefits for Joining</h2>
-        <p></p>
-        <picture class="benefitsImg">
-          <source
-            media="(max-width: 200px )"
-            srcset="images/JoinImg/benefitsImg200.jpg"
-          />
-          <source
-            media="(max-width: 500px )"
-            srcset="images/JoinImg/benefitsImg500.jpg"
-          />
-          <source
-            media="(max-width: 800px )"
-            srcset="images/JoinImg/benefitsImg800.jpg"
-          />
-        <img src="images/JoinImg/benefitsImg.jpg" alt="benefitsImg">
-        </picture>
-      </section>
+        <h2>Join Us</h2>
+        
       <form action="response.html" method="get">
-        <fieldset>
-          <label class="forumTop">First Name*: <input type="text" name="fname" id="fname" required></label>
-          <label class="forumTop">Last Name*: <input type="text" name="lname" id="lname" required></label>
-          <label class="forumTop">Title: <input type="text" placeholder="Dr." name="title" id="title"></label>
-          <label class="forumTop">Email: <input type="email" placeholder="someone@gmail.com" name="email"></label>
-          <label class="forumTop" >Phone Number*: <input type="tel" name="phone" placeholder="1234561234" required></label>
+        <fieldset class="joinForm">
+          <div class="formInputContainer">
+
+            <label class="forumTop">First Name*: <input type="text" name="fname" id="fname" required></label>
+            <label class="forumTop">Last Name*: <input type="text" name="lname" id="lname" required></label>
+            <label class="forumTop">Title: <input type="text" placeholder="Dr." name="title" id="title"></label>
+            <label class="forumTop">Email: <input type="email" placeholder="someone@gmail.com" name="email"></label>
+            <label class="forumTop" >Phone Number*: <input type="tel" name="phone" placeholder="1234561234" required></label>
+          </div>
           <img src="images/JoinImg/joinUsImgOne.jpg" alt="formImg" class="formImg">
         </fieldset>
         
-        <fieldset>
-          <label class="forumTop">Business Name*: <input type="text" name="businessname" id="businessname" required></label>
-          <label class="forumTop">Business Address*: <input type="text" name="businessaddress" id="businessaddress" required></label>
-          <label class="forumTop">Business Website: <input type="text" name="website" placeholder="wwww.website.com"></label>
-          <label class="forumTop">Business Description: <input type="text" name="businessdescription"></label>
-          
+        <fieldset class="joinForm">
+          <div class="formInputContainer">
+
+            <label class="forumTop">Business Name*: <input type="text" name="businessname" id="businessname" required></label>
+            <label class="forumTop">Business Address*: <input type="text" name="businessaddress" id="businessaddress" required></label>
+            <label class="forumTop">Business Website: <input type="text" name="website" placeholder="wwww.website.com"></label>
+            <label class="forumTop">Business Description: <input type="text" name="businessdescription"></label>
+            
+          </div>
           <img src="images/JoinImg/joinUsImgTwo.jpg" alt="formImg" class="formImg">
         </fieldset>
         <section class="membershipSection">
@@ -109,7 +99,7 @@
             <input class="submitBtn" type="submit" value="Sign Up">
           </div>
           <div class="membershipLevelCards">
-            <h3>Bronze</h3>
+            <h3>Gold</h3>
             <h4>$650</h4>
             <p>Benefits</p>
             <ul>
